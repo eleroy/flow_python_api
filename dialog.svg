@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="122.194mm"
+   height="35.194mm"
+   viewBox="0 0 122.194 35.194"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="dialog.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.70555556"
+     inkscape:cx="317.48031"
+     inkscape:cy="335.90551"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-21.028,-59.652996)">
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2.194"
+       id="rect1"
+       width="120"
+       height="33"
+       x="22.125"
+       y="60.749996"
+       rx="10"
+       ry="10" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;font-family:Poppins;-inkscape-font-specification:Poppins;text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:2.194"
+       x="45"
+       y="79.125"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="fill:#000000;stroke:none;stroke-width:2.194"
+         x="45"
+         y="79.125">$Message</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+html
+    head
+        link(rel="stylesheet",href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css")
+    body(style="padding:20px;")
+        table.ui.celled.striped.table(style="width:10cm")
+            thead
+                tr
+                    th Etape
+                    th Description
+                    th Risques
+                    th Equipement
+                    th Actions
+            tbody
+                {% for step in etapes %}
+                tr
+                    td(style="background-color:#FF0000")
+                        i.bell.icon
+                        | {{step.numero}}
+                    td
+                        {{step.description}}
+                    td
+                        {{step.risques}}
+                    td
+                        {{step.equipement}}
+                    td
+
+                {% endfor %}

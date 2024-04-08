@@ -1,0 +1,19 @@
+{
+  "template": "procedure",
+  "context": {
+    "etapes": [
+      {
+        "numero": "1",
+        "description": "Retirer le capot de protection",
+        "risques": "Pas de risques",
+        "equipement": "Servovalve"
+      },
+      {
+        "numero": "2",
+        "description": "Regler le jeu",
+        "risques": "Pas de risques",
+        "equipement": "Servovalve"
+      }
+    ]
+  }
+}

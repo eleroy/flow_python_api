@@ -1,0 +1,9 @@
+
+
+@page {
+   size: A4;
+  margin: 1cm 0 2cm 0cm;
+  @bottom-center {
+    font-family: 'Lato';
+  }
+}

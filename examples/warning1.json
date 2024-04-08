@@ -1,0 +1,7 @@
+{
+  "template": "warning",
+  "context": {
+    "titre": "Attention aux vis !",
+    "description": "Ne perdez pas les vis, vous en aurez besoin pour remonter le dispositif."
+  }
+}

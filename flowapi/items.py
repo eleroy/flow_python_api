@@ -143,6 +143,7 @@ class BoutonText(Component):
 
     def set_size(self, diameter_m):
         self.set_scale(diameter_m / self.base_width_m, diameter_m / self.base_width_m, diameter_m / self.base_width_m)
+        return self
 
 
 class Media(Item):
@@ -201,6 +202,7 @@ class BoutonSimple(Component):
 
     def set_size(self, diameter_m):
         self.set_scale(diameter_m / self.base_width_m, diameter_m / self.base_width_m, diameter_m / self.base_width_m)
+        return self
 
 
 class Timer(Component):
@@ -244,6 +246,7 @@ class Timer(Component):
 
     def set_size(self, diameter_m):
         self.set_scale(diameter_m / self.base_width_m, diameter_m / self.base_width_m, diameter_m / self.base_width_m)
+        return self
 
 
 class Zone(Component):
@@ -274,6 +277,7 @@ class Zone(Component):
 
     def set_size(self, diameter_m):
         self.set_scale(diameter_m / self.base_width_m, diameter_m / self.base_width_m, diameter_m / self.base_width_m)
+        return self
 
 class Texte(Component):
     def __init__(self, name="Zone", value="Texte"):
@@ -310,6 +314,7 @@ class Texte(Component):
 
     def set_size(self, diameter_m):
         self.set_scale(diameter_m / self.base_width_m, diameter_m / self.base_width_m, diameter_m / self.base_width_m)
+        return self
 
 
 class Panneau(Component):
@@ -395,6 +400,7 @@ class Panneau(Component):
 
     def set_size(self, diameter_m):
         self.set_scale(diameter_m / self.base_width_m, diameter_m / self.base_width_m, diameter_m / self.base_width_m)
+        return self
 
 
 components_object = [BoutonText, BoutonSimple, Texte, Timer, Zone, Panneau]
@@ -437,7 +443,6 @@ def parseComponent(components, links, component_id):
 
 
 def parseMedia(medias, animations, media_id, scenario_path, saving_media_path = Path.cwd().joinpath("temp")):
-    print(medias)
     if(not isinstance(medias["ArrayOfMediaMetadata"]["MediaMetadata"], list)):
         media_data = [medias["ArrayOfMediaMetadata"]["MediaMetadata"]]
     else:

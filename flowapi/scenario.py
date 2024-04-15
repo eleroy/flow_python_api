@@ -17,6 +17,7 @@ class Scenario:
     def __init__(self, name="Scenario", id = None):
         self.id = get_uuid() if id is None else id
         self.pos = {"x": 0, "y": 0}
+        self.step_by_row = 5
         self.name = name
         self.description = ""
         self.is_origin = False
@@ -29,7 +30,8 @@ class Scenario:
     def add_step(self, step):
         if len(self.steps) == 0:
             step.is_origin = True
-        step.pos["x"] = len(self.steps) * 400 + 400
+        step.pos["x"] = (len(self.steps) % self.step_by_row) * 400 + 280
+        step.pos["y"] = 1050 - (len(self.steps) // self.step_by_row)*400
         self.steps.append(step)
         return step
 
@@ -201,8 +203,8 @@ class Scenario:
         }
         return component_dict
 
-    def get_medias_xml(self):
-        media_dir = global_scenario_path.joinpath(self.id).joinpath("Media")
+    def get_medias_xml(self, output_folder=global_scenario_path):
+        media_dir = output_folder.joinpath(self.id).joinpath("Media")
         media_dir.mkdir(exist_ok=True)
         items = []
         for step in self.steps:
@@ -222,8 +224,8 @@ class Scenario:
             component_dict["ArrayOfMediaMetadata"]["MediaMetadata"] = metadata_xml
         return component_dict
 
-    def save_scenario(self):
-        scenario_path = global_scenario_path.joinpath(self.id)
+    def save_scenario(self,output_folder=global_scenario_path):
+        scenario_path = output_folder.joinpath(self.id)
         scenario_path.mkdir(exist_ok=True)
 
         animation_file = scenario_path.joinpath("animations.xml")
@@ -244,7 +246,7 @@ class Scenario:
 
         media_file = scenario_path.joinpath("media_metadatas.xml")
         with open(media_file, "w", encoding='utf-8') as fp:
-            fp.write(xmltodict.unparse(self.get_medias_xml(), pretty=True, short_empty_elements=True))
+            fp.write(xmltodict.unparse(self.get_medias_xml(output_folder), pretty=True, short_empty_elements=True))
 
         config_file = scenario_path.joinpath("config.xml")
         with open(config_file, "w", encoding='utf-8') as fp:

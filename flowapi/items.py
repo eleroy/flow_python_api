@@ -51,6 +51,9 @@ class Item:
         }
         return item_dict
 
+    def get_xml(self):
+        return self.get_item_xml()
+
     def set_position(self, x=None, y=None, z=None):
         if x:
             self.position["x"] = x

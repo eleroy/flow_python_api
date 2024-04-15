@@ -1,10 +1,11 @@
 import copy
+import re
 from pathlib import Path
 from typing import List
 
 import xmltodict
 
-from .items import Item
+from .items import Item, Media, Component
 from .tools import get_uuid
 
 
@@ -12,7 +13,7 @@ class Step:
     def __init__(self, name="New step", origin=False):
         self.id = get_uuid()
         self.is_origin = origin
-        self.items: List[Item] = []
+        self.items: List[Item | Media | Component] = []
         self.name = name
         self.pos = {"x": 0, "y": 0}
 
@@ -59,12 +60,12 @@ class Step:
         print(dict_step)
         return dict_step, dict_metadata
 
-    def add(self, item: Item, clone=False,item_name_prefix='', item_name_suffix=''):
+    def add(self, item: Item, clone=False, item_name_prefix='', item_name_suffix=''):
         if (hasattr(item, "components")):
             for component in item.components:
                 if clone:
                     new_item = component.clone()
-                    new_item.name = item_name_prefix+new_item.name+item_name_suffix
+                    new_item.name = item_name_prefix + new_item.name + item_name_suffix
                     self.items.append(new_item)
                 else:
                     self.items.append(component)
@@ -105,9 +106,33 @@ class Step:
             return None
         return self.items[item_index]
 
+    def remove_item(self, matched_item):
+        for item in self.items:
+            if item == matched_item:
+                self.items.remove(matched_item)
+                return True
+            return False
+
+    def find_items_from_regex(self, name_regex: re.Pattern | str):
+        if type(name_regex) is str:
+            regex = re.compile(name_regex)
+        elif type(name_regex) is re.Pattern:
+            regex = name_regex
+        else:
+            return None
+        found_items = []
+        for item in self.items:
+            if regex.match(item.name):
+                found_items.append(item)
+        return found_items
+
+    def remove_items_from_regex(self, name_regex: re.Pattern | str):
+        for item in self.find_items_from_regex(name_regex):
+            self.remove_item(item)
+
     def merge_step(self, step, clone=False):
         for item in step.items:
-            self.add(item, clone, item_name_prefix=self.name+"_")
+            self.add(item, clone, item_name_prefix=self.name + "_")
 
     def clone(self):
         new_step = copy.copy(self)

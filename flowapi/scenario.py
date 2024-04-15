@@ -1,5 +1,6 @@
 import copy
 import datetime
+import re
 import shutil
 from pathlib import Path
 from typing import List
@@ -14,7 +15,7 @@ from .tools import get_uuid, global_scenario_path, uuid_list
 
 
 class Scenario:
-    def __init__(self, name="Scenario", id = None):
+    def __init__(self, name="Scenario", id=None):
         self.id = get_uuid() if id is None else id
         self.pos = {"x": 0, "y": 0}
         self.step_by_row = 5
@@ -31,7 +32,7 @@ class Scenario:
         if len(self.steps) == 0:
             step.is_origin = True
         step.pos["x"] = (len(self.steps) % self.step_by_row) * 400 + 280
-        step.pos["y"] = 1050 - (len(self.steps) // self.step_by_row)*400
+        step.pos["y"] = 1050 - (len(self.steps) // self.step_by_row) * 400
         self.steps.append(step)
         return step
 
@@ -209,7 +210,7 @@ class Scenario:
         items = []
         for step in self.steps:
             for item in step.items:
-                if item.is_media:
+                if type(item) is Media:
                     shutil.copyfile(Path(item.path), media_dir.joinpath(Path(item.path).name))
                     items.append(item)
         metadata_xml = [item.get_xml() for item in items]
@@ -224,7 +225,7 @@ class Scenario:
             component_dict["ArrayOfMediaMetadata"]["MediaMetadata"] = metadata_xml
         return component_dict
 
-    def save_scenario(self,output_folder=global_scenario_path):
+    def save_scenario(self, output_folder=global_scenario_path):
         scenario_path = output_folder.joinpath(self.id)
         scenario_path.mkdir(exist_ok=True)
 
@@ -276,11 +277,59 @@ class Scenario:
         scenario_clone = scenario.clone()
         for step in scenario_clone:
             new_step = step_to_replace.clone()
-            step.merge_step(new_step,clone=True)
+            step.merge_step(new_step, clone=True)
             self.add_step(step)
 
+    def find_item_by_id(self, id):
+        for step in self.steps:
+            for item in step.items:
+                if item.id == id:
+                    return item
+        return None
+
+    def remove_item(self, item):
+        for step in self.steps:
+            step.remove_item(item)
+
+    def find_steps_from_regex(self, name_regex: re.Pattern | str):
+        if type(name_regex) is str:
+            regex = re.compile(name_regex)
+        elif type(name_regex) is re.Pattern:
+            regex = name_regex
+        else:
+            return None
+        found_steps = []
+        for step in self.steps:
+            if regex.match(step.name):
+                found_steps.append(step)
+        return found_steps
+
+    def find_items_by_path(self, path):
+        """
+        path is regex_step/regex_item or regex_item
+        :param path:
+        :return: matched items
+        """
+        split_path = path.split("/")
+        if len(split_path) == 1:
+            matched_steps = self.steps
+            item_regex = split_path[0]
+        else:
+            step_regex = split_path[0]
+            item_regex = split_path[1]
+            step_regex = '.*' if step_regex == "*" else step_regex
+            matched_steps = self.find_steps_from_regex(step_regex)
+        item_regex = '.*' if item_regex == "*" else item_regex
+
+        matched_items = []
+        for step in matched_steps:
+            found_items = step.find_items_from_regex(item_regex)
+            if matched_items:
+                matched_items.extend(found_items)
+        return matched_items
+
     def clone(self):
-        step_ids = {}
+        step_ids:dict[str,str] = {}
         new_steps = []
         for step in self.steps:
             step_clone = step.clone()
@@ -292,8 +341,7 @@ class Scenario:
         for step in new_scenario.steps:
             for item in step.items:
                 if hasattr(item, "to"):
-                    step.to = new_scenario.get_step_by_id(step_ids[step_ids.to.id])
-
+                    step.to = new_scenario.get_step_by_id(step_ids[step.to.id])
         return new_scenario
 
     @staticmethod

@@ -4,6 +4,8 @@ from pathlib import Path
 
 from .animation import Animation
 from .tools import get_uuid, get_quaternion_from_euler
+import tempfile
+from PIL import Image
 
 
 class Item:
@@ -92,6 +94,7 @@ class Component(Item):
         super().__init__(name)
         self.property_identifier = ""
         self.nov_component_identifier = ""
+        self.to = ""
 
     def parse(self, component_dict):
         pass
@@ -104,6 +107,10 @@ class Component(Item):
                 "AbstractProperty"
             }
         }
+    
+    def target(self, dest_step):
+        self.to = dest_step
+        return self
 
 
 class BoutonText(Component):
@@ -138,11 +145,7 @@ class BoutonText(Component):
             }]
         )
         item_dict["NovComponentIdentifier"] = {"Id": self.nov_component_identifier}
-        return item_dict
-
-    def target(self, dest_step):
-        self.to = dest_step
-        return self
+        return item_dict    
 
     def set_size(self, diameter_m):
         self.set_scale(diameter_m / self.base_width_m, diameter_m / self.base_width_m, diameter_m / self.base_width_m)
@@ -150,12 +153,18 @@ class BoutonText(Component):
 
 
 class Media(Item):
-    def __init__(self, path):
+    def __init__(self, path, name="Media"):
         super().__init__("media")
+        self.name = name
         self.is_media = True
         self.path = path
-        self.animation = Animation()
+        self.animation = Animation(path="Media\\" + Path(self.path).name)
         self.animation_status = "OnceAndClamp"
+
+    def set_path(self, path):
+        self.path = path
+        self.animation.media_path = "Media\\" + Path(self.path).name
+        return self
 
     def get_xml(self):
         item_dict = self.get_item_xml()
@@ -165,23 +174,30 @@ class Media(Item):
                 "propertyIdentifier": "ItemPropertyAnimationIdentifier",
                 "title": "Animation",
                 "ItemIdentifier": {"Id": self.id},
-                "value": {"animationIdentifier": self.animation.id},
+                "value": {"animationIdentifier": {"Id":self.animation.id}},
                 "playAnimationStatus": self.animation_status
             }]
         )
-        item_dict["PathInDatabase"] = "Media/" + Path(self.path).name
+        item_dict["PathInDatabase"] = "Media\\" + Path(self.path).name
         item_dict["InternalHierarchy"] = None
         return item_dict
 
     def set_width(self, width_m):
         self.set_scale(width_m, width_m, width_m)
 
+    @staticmethod
+    def get_placeholder(name:str="Placeholder",type_file=".png"):
+        temp_file = tempfile.NamedTemporaryFile(delete=False, suffix=type_file)
+        path = Path(temp_file.name)
+        image_placeholder = Image.new('RGB', (100, 100))
+        image_placeholder.save(path, "PNG")
+        return Media(path=path, name=name)
+
 
 class BoutonSimple(Component):
     def __init__(self, name="Bouton simple"):
         super().__init__(name)
         self.property_identifier = "Component_button_simple_interactive_identifier"
-        self.to = None
         self.base_width_m = 0.15
         self.nov_component_identifier = "Component_button_simple"
 
@@ -199,10 +215,6 @@ class BoutonSimple(Component):
         item_dict["NovComponentIdentifier"] = {"Id": self.nov_component_identifier}
         return item_dict
 
-    def target(self, dest_step):
-        self.to = dest_step
-        return self
-
     def set_size(self, diameter_m):
         self.set_scale(diameter_m / self.base_width_m, diameter_m / self.base_width_m, diameter_m / self.base_width_m)
         return self
@@ -213,9 +225,9 @@ class Timer(Component):
         super().__init__(name)
         self.property_identifier = "Component_timer_interactive_identifier"
         self.duration = duration_s
-        self.to = None
         self.base_width_m = 0.15
         self.nov_component_identifier = "Component_timer"
+
     def parse(self, component_dict):
         self.duration = float(component_dict["Properties"]["AbstractProperty"][2]["value"])
 
@@ -243,10 +255,6 @@ class Timer(Component):
         item_dict["NovComponentIdentifier"] = {"Id": self.nov_component_identifier}
         return item_dict
 
-    def target(self, dest_step):
-        self.to = dest_step
-        return self
-
     def set_size(self, diameter_m):
         self.set_scale(diameter_m / self.base_width_m, diameter_m / self.base_width_m, diameter_m / self.base_width_m)
         return self
@@ -256,7 +264,6 @@ class Zone(Component):
     def __init__(self, name="Zone"):
         super().__init__(name)
         self.property_identifier = "Component_zone_interactive_identifier"
-        self.to = None
         self.base_width_m = 0.15
         self.nov_component_identifier = "Component_zone"
 
@@ -274,10 +281,6 @@ class Zone(Component):
         item_dict["NovComponentIdentifier"] = {"Id": self.nov_component_identifier}
         return item_dict
 
-    def target(self, dest_step):
-        self.to = dest_step
-        return self
-
     def set_size(self, diameter_m):
         self.set_scale(diameter_m / self.base_width_m, diameter_m / self.base_width_m, diameter_m / self.base_width_m)
         return self
@@ -287,7 +290,6 @@ class Texte(Component):
         super().__init__(name)
         self.property_identifier = "Component_zone_interactive_identifier"
         self.value = value
-        self.to = None
         self.base_width_m = 1
         self.nov_component_identifier = "Component_text"
 
@@ -311,10 +313,6 @@ class Texte(Component):
         item_dict["NovComponentIdentifier"] = {"Id": self.nov_component_identifier}
         return item_dict
 
-    def target(self, dest_step):
-        self.to = dest_step
-        return self
-
     def set_size(self, diameter_m):
         self.set_scale(diameter_m / self.base_width_m, diameter_m / self.base_width_m, diameter_m / self.base_width_m)
         return self
@@ -327,7 +325,6 @@ class Panneau(Component):
         self.titre = titre
         self.description = description
         self.image = image
-        self.to = None
         self.base_width_m = 1
         self.nov_component_identifier = "Component_panel_formation"
 
@@ -397,10 +394,6 @@ class Panneau(Component):
         item_dict["NovComponentIdentifier"] = {"Id": self.nov_component_identifier}
         return item_dict
 
-    def target(self, dest_step):
-        self.to = dest_step
-        return self
-
     def set_size(self, diameter_m):
         self.set_scale(diameter_m / self.base_width_m, diameter_m / self.base_width_m, diameter_m / self.base_width_m)
         return self
@@ -465,7 +458,7 @@ def parseMedia(medias, animations, media_id, scenario_path, saving_media_path = 
     new_component.rotation = comp_data["Properties"]["AbstractProperty"][1]["value"]["rotation"]["eulerAngles"]
     new_component.scale = comp_data["Properties"]["AbstractProperty"][1]["value"]["scale"]
     animation = Animation()
-    animation.id = comp_data["Properties"]["AbstractProperty"][2]["value"]["animationIdentifier"]
+    animation.id = comp_data["Properties"]["AbstractProperty"][2]["value"]["animationIdentifier"]["Id"]
     new_component.animation = animation
     new_component.animation_status = comp_data["Properties"]["AbstractProperty"][2]["playAnimationStatus"]
     new_component.path = dest_file

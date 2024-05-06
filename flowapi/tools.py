@@ -1,7 +1,7 @@
 import math
 from pathlib import Path
-
-uuid_list = [0]
+import uuid
+uuid_list = set()
 global_scenario_path = Path("Scenarios")
 temp_image_path = Path("temp_images")
 
@@ -33,6 +33,14 @@ def get_quaternion_from_euler(eulerAngles):
 
 
 def get_uuid():
-    new_uuid = uuid_list[-1]+1
-    uuid_list.append(new_uuid)
-    return f'{new_uuid:08x}'
+    global uuid_list
+    for i in range(20):
+        new_uuid = str(uuid.uuid4())[:8]
+        if new_uuid not in uuid_list:
+            break
+    uuid_list.add(new_uuid)
+    return f'{new_uuid}'
+
+def clear_uuid_database():
+    global uuid_list
+    uuid_list = set()

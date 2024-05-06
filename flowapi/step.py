@@ -17,6 +17,10 @@ class Step:
         self.name = name
         self.pos = {"x": 0, "y": 0}
 
+    def set_pos_grid(self, col, row):
+        self.pos["x"] = col * 500 + 280
+        self.pos["y"] = row * 400
+
     def get_xml(self):
         dict_metadata = \
             {"StepMetadata":
@@ -42,6 +46,7 @@ class Step:
                 if component_dict["MediaMetadataIdentifiers"] is None:
                     component_dict["MediaMetadataIdentifiers"] = {"ItemIdentifier": []}
                 component_dict["MediaMetadataIdentifiers"]["ItemIdentifier"].append({"Id": item.id})
+                continue
             if component_dict["ComponentMetadataIdentifiers"] is None:
                 component_dict["ComponentMetadataIdentifiers"] = {"ItemIdentifier": []}
             component_dict["ComponentMetadataIdentifiers"]["ItemIdentifier"].append({"Id": item.id})
@@ -60,15 +65,21 @@ class Step:
         print(dict_step)
         return dict_step, dict_metadata
 
-    def add(self, item: Item, clone=False, item_name_prefix='', item_name_suffix=''):
+    def add(self, item, clone=False, item_name_prefix='', item_name_suffix=''):
         if (hasattr(item, "components")):
-            for component in item.components:
+            compo_n_item = []
+            for component in item.components:                
                 if clone:
                     new_item = component.clone()
                     new_item.name = item_name_prefix + new_item.name + item_name_suffix
                     self.items.append(new_item)
+                    compo_n_item.append(new_item)
                 else:
                     self.items.append(component)
+            if clone:
+                new_item = copy.copy(item)
+                new_item.set_components(compo_n_item)
+                return new_item
             return item
         if clone:
             new_item = item.clone()
@@ -77,6 +88,9 @@ class Step:
         else:
             self.items.append(item)
         return item
+    
+    def add_placeholder(self, name="Placeholder"):
+        return self.add(Media.get_placeholder(name))
 
     def save_step(self, scenario_path):
         print(scenario_path)

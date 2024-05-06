@@ -72,12 +72,12 @@ def parseScenario(scenario_path:Path):
             new_component = parseMedia(media_data, animation_data, media, scenario_path)
             uuids.append(new_component.id)
             step_obj.add(new_component)
-        scenario.add_step(step_obj)
+        scenario.add_step(step_obj, auto_pos=False)
     step_ids = [st.id for st in scenario.steps]
     for step in scenario.steps:
         for comp in step.items:
             if hasattr(comp,"to"):
                 if comp.to is not None:
                     comp.to = scenario.steps[step_ids.index(comp.to)]
-    flowapi.tools.uuid_list.extend(uuids)
+    flowapi.tools.uuid_list.update(uuids)
     return scenario

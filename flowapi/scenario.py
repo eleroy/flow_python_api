@@ -23,18 +23,19 @@ class Scenario:
         self.description = ""
         self.is_origin = False
         self.steps: List[Step] = []
-        self.items: List[Media | Component] = []
         self.links: List[Link] = []
         self.animations: List[Animation] = []
         self.last_date_save = datetime.datetime.now(tz=datetime.timezone(datetime.timedelta(hours=1)))
 
-    def add_step(self, step):
+    def add_step(self, step, auto_pos=True):
         if len(self.steps) == 0:
             step.is_origin = True
-        step.pos["x"] = (len(self.steps) % self.step_by_row) * 400 + 280
-        step.pos["y"] = 1050 - (len(self.steps) // self.step_by_row) * 400
+        if auto_pos:
+            step.pos["x"] = (len(self.steps) % self.step_by_row) * 400 + 280
+            step.pos["y"] = 1050 - (len(self.steps) // self.step_by_row) * 400
         self.steps.append(step)
-        return step
+        return step    
+    
 
     def get_config_xml(self):
         step_identifiers = None
@@ -72,9 +73,10 @@ class Scenario:
 
     def get_animation_xml(self):
         self.animations = []
-        for item in self.items:
-            if item.is_media:
-                self.animations.append(item.animation)
+        for step in self.steps:
+            for item in step.items:
+                if isinstance(item,Media):
+                    self.animations.append(item.animation)
 
         animation_dict = {
             "ArrayOfFlowAnimation":
@@ -159,7 +161,7 @@ class Scenario:
         self.links = []
         for step in self.steps:
             for item in step.items:
-                if not item.is_media:
+                if isinstance(item, Component):
                     if hasattr(item, "to"):
                         if item.to is not None:
                             if (step != item.to):
@@ -191,7 +193,6 @@ class Scenario:
         items = []
         for step in self.steps:
             for item in step.items:
-                print(item)
                 if not item.is_media:
                     items.append(item)
         component_dict = {
@@ -255,6 +256,7 @@ class Scenario:
 
         for step in self.steps:
             step.save_step(scenario_path)
+        return scenario_path
 
     def get_step_by_name(self, name):
         step_names = [step.name for step in self.steps]
@@ -320,12 +322,12 @@ class Scenario:
             step_regex = '.*' if step_regex == "*" else step_regex
             matched_steps = self.find_steps_from_regex(step_regex)
         item_regex = '.*' if item_regex == "*" else item_regex
-
+        if not matched_steps:
+            return []
         matched_items = []
         for step in matched_steps:
-            found_items = step.find_items_from_regex(item_regex)
-            if matched_items:
-                matched_items.extend(found_items)
+            found_items = step.find_items_from_regex(item_regex)           
+            matched_items.extend(found_items if found_items else [])
         return matched_items
 
     def clone(self):

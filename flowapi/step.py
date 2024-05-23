@@ -3,72 +3,73 @@ import re
 from pathlib import Path
 from typing import List
 
+from pydantic import BaseModel, Field
 import xmltodict
 
 from .items import Item, Media, Component
 from .tools import get_uuid
 
 
-class Step:
-    def __init__(self, name="New step", origin=False):
-        self.id = get_uuid()
-        self.is_origin = origin
-        self.items: List[Item | Media | Component] = []
-        self.name = name
-        self.pos = {"x": 0, "y": 0}
+class StepPos(BaseModel):
+    x: float = 0
+    y: float = 0
+
+
+class Step(BaseModel):
+    id: str = Field(default_factory=get_uuid)
+    is_origin: bool = False
+    items: List[Item | Media | Component] = Field(default_factory=list)
+    name: str = "New Step"
+    pos: StepPos = Field(default_factory=StepPos)
 
     def set_pos_grid(self, col, row):
-        self.pos["x"] = col * 500 + 280
-        self.pos["y"] = row * 400
+        self.pos.x = col * 500 + 280
+        self.pos.y = row * 400
 
     def get_xml(self):
-        dict_metadata = \
-            {"StepMetadata":
-                {
-                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
-                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                    "StepIdentifier":
-                        {"Id": self.id},
-                    "IsScenarioOrigin": self.is_origin,
-                    "LocalPositionInScenario":
-                        {
-                            "x": self.pos["x"],
-                            "y": self.pos["y"],
-                        }
-                }
+        dict_metadata = {
+            "StepMetadata": {
+                "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "StepIdentifier": {"Id": self.id},
+                "IsScenarioOrigin": self.is_origin,
+                "LocalPositionInScenario": self.pos.model_dump(),
             }
+        }
         component_dict = {
             "ComponentMetadataIdentifiers": None,
-            "MediaMetadataIdentifiers": None
+            "MediaMetadataIdentifiers": None,
         }
         for item in self.items:
             if item.is_media:
                 if component_dict["MediaMetadataIdentifiers"] is None:
                     component_dict["MediaMetadataIdentifiers"] = {"ItemIdentifier": []}
-                component_dict["MediaMetadataIdentifiers"]["ItemIdentifier"].append({"Id": item.id})
+                component_dict["MediaMetadataIdentifiers"]["ItemIdentifier"].append(
+                    {"Id": item.id}
+                )
                 continue
             if component_dict["ComponentMetadataIdentifiers"] is None:
                 component_dict["ComponentMetadataIdentifiers"] = {"ItemIdentifier": []}
-            component_dict["ComponentMetadataIdentifiers"]["ItemIdentifier"].append({"Id": item.id})
+            component_dict["ComponentMetadataIdentifiers"]["ItemIdentifier"].append(
+                {"Id": item.id}
+            )
 
-        dict_step = \
-            {"Step":
-                {
-                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
-                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                    "StepIdentifier":
-                        {"Id": self.id},
-                    "DisplayName": self.name,
-                    **component_dict.copy()
-                }
+        dict_step = {
+            "Step": {
+                "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "StepIdentifier": {"Id": self.id},
+                "DisplayName": self.name,
+                **component_dict.copy(),
             }
+        }
         print(dict_step)
         return dict_step, dict_metadata
 
-    def add(self, item, clone=False, item_name_prefix='', item_name_suffix=''):
-        if (hasattr(item, "components")):
+    def add(self, item, clone=False, item_name_prefix="", item_name_suffix=""):
+        if hasattr(item, "components"):
             compo_n_item = []
-            for component in item.components:                
+            for component in item.components:
                 if clone:
                     new_item = component.clone()
                     new_item.name = item_name_prefix + new_item.name + item_name_suffix
@@ -88,7 +89,7 @@ class Step:
         else:
             self.items.append(item)
         return item
-    
+
     def add_placeholder(self, name="Placeholder"):
         return self.add(Media.get_placeholder(name))
 
@@ -99,10 +100,14 @@ class Step:
         dict_step, dict_metadata = self.get_xml()
         step_file_path = step_path.joinpath(self.id + ".xml")
         step_metadata_file_path = step_path.joinpath(self.id + "_metadata.xml")
-        with open(step_file_path, "w", encoding='utf-8') as fp:
-            fp.write(xmltodict.unparse(dict_step, pretty=True, short_empty_elements=True))
-        with open(step_metadata_file_path, "w", encoding='utf-8') as fp:
-            fp.write(xmltodict.unparse(dict_metadata, pretty=True, short_empty_elements=True))
+        with open(step_file_path, "w", encoding="utf-8") as fp:
+            fp.write(
+                xmltodict.unparse(dict_step, pretty=True, short_empty_elements=True)
+            )
+        with open(step_metadata_file_path, "w", encoding="utf-8") as fp:
+            fp.write(
+                xmltodict.unparse(dict_metadata, pretty=True, short_empty_elements=True)
+            )
 
     def get_item_by_name(self, name):
         item_names = [item.name for item in self.items]

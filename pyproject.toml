@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "flowapi"
-version = "0.1.2"
+version = "0.1.3"
 description = "An Api to interact with the Flow Hololens software from Holoforge"
 authors = ["Edouard Leroy <edouard.leroy@cea.fr>"]
 license = "MIT"
@@ -14,6 +14,7 @@ pillow = "^10.3.0"
 pdf2image = "^1.17.0"
 xmltodict = "^0.13.0"
 weasyprint = "^61.2"
+pydantic = "^2.7.1"
 
 
 [build-system]

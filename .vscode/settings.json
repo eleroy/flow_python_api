@@ -1,0 +1,4 @@
+{
+    "python.languageServer": "Pylance",
+    "editor.formatOnSave": true,
+}

@@ -1,13 +1,15 @@
+from pydantic import BaseModel, Field
+
+from flowapi.items import Component
 from .step import Step
 from .tools import get_uuid
 
 
-class Link:
-    def __init__(self, from_step, dest_step, source_component):
-        self.id = get_uuid()
-        self.from_step: Step = from_step
-        self.dest_step: Step = dest_step
-        self.source_component = source_component
+class Link(BaseModel):
+    from_step: Step
+    dest_step: Step
+    source_component: Component
+    id: str = Field(default_factory=get_uuid)
 
     def get_xml(self):
         link_dict = {
@@ -21,10 +23,9 @@ class Link:
 
     @staticmethod
     def from_dict(link_dict):
-        new_link = Link(link_dict["StepIdentifier"]["Id"],
-                        link_dict["DestinationIdentifier"]["Id"],
-                        link_dict["ComponentMetadataIdentifier"]["Id"],
-                        )
-
-        return
-
+        new_link = Link(
+            from_step=link_dict["StepIdentifier"]["Id"],
+            dest_step=link_dict["DestinationIdentifier"]["Id"],
+            source_component=link_dict["ComponentMetadataIdentifier"]["Id"],
+        )
+        return new_link

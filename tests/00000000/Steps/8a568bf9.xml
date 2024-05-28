@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Step xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<StepIdentifier>
+		<Id>8a568bf9</Id>
+	</StepIdentifier>
+	<DisplayName>Assistance1-RM</DisplayName>
+	<ComponentMetadataIdentifiers/>
+	<MediaMetadataIdentifiers/>
+</Step>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Step xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<StepIdentifier>
+		<Id>2fa4f086</Id>
+	</StepIdentifier>
+	<DisplayName>Connection</DisplayName>
+	<ComponentMetadataIdentifiers>
+		<ItemIdentifier>
+			<Id>fb79354f</Id>
+		</ItemIdentifier>
+		<ItemIdentifier>
+			<Id>67c9cea1</Id>
+		</ItemIdentifier>
+	</ComponentMetadataIdentifiers>
+	<MediaMetadataIdentifiers>
+		<ItemIdentifier>
+			<Id>e10672e5</Id>
+		</ItemIdentifier>
+		<ItemIdentifier>
+			<Id>fe8673aa</Id>
+		</ItemIdentifier>
+		<ItemIdentifier>
+			<Id>0ad461de</Id>
+		</ItemIdentifier>
+		<ItemIdentifier>
+			<Id>37067bb9</Id>
+		</ItemIdentifier>
+	</MediaMetadataIdentifiers>
+</Step>

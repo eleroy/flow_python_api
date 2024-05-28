@@ -1,0 +1,5860 @@
+{
+  "id": "00000000",
+  "pos": {
+    "x": 0.0,
+    "y": 0.0
+  },
+  "step_by_row": 5,
+  "name": "Scenario cloné",
+  "description": null,
+  "steps": [
+    {
+      "id": "2fa4f086",
+      "is_origin": true,
+      "items": [
+        {
+          "name": "Connection-Bouton-Eqt1",
+          "id": "fb79354f",
+          "is_media": false,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        },
+        {
+          "name": "Connection-Bouton-Eqt2",
+          "id": "67c9cea1",
+          "is_media": false,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        },
+        {
+          "name": "alert",
+          "id": "e10672e5",
+          "is_media": true,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          },
+          "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpwircavs0.png",
+          "animation": {
+            "media_path": "Media\\tmpwircavs0.png",
+            "id": "d5926011",
+            "name": "Aucune animation",
+            "duration": 0.0,
+            "transformations": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "transformations_destination": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          "animation_status": "OnceAndClamp"
+        },
+        {
+          "name": "procedure",
+          "id": "fe8673aa",
+          "is_media": true,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.2,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          },
+          "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmp77z578ln.png",
+          "animation": {
+            "media_path": "Media\\tmp77z578ln.png",
+            "id": "f3325dcb",
+            "name": "Aucune animation",
+            "duration": 0.0,
+            "transformations": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "transformations_destination": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          "animation_status": "OnceAndClamp"
+        },
+        {
+          "name": "autorisation",
+          "id": "0ad461de",
+          "is_media": true,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.4,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          },
+          "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpvwhd34o6.png",
+          "animation": {
+            "media_path": "Media\\tmpvwhd34o6.png",
+            "id": "22223cc8",
+            "name": "Aucune animation",
+            "duration": 0.0,
+            "transformations": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "transformations_destination": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          "animation_status": "OnceAndClamp"
+        },
+        {
+          "name": "warning",
+          "id": "37067bb9",
+          "is_media": true,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.6000000000000001,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          },
+          "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpvvxrd6bp.png",
+          "animation": {
+            "media_path": "Media\\tmpvvxrd6bp.png",
+            "id": "6bb89bcd",
+            "name": "Aucune animation",
+            "duration": 0.0,
+            "transformations": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "transformations_destination": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          "animation_status": "OnceAndClamp"
+        }
+      ],
+      "name": "Connection",
+      "pos": {
+        "x": 280.0,
+        "y": 2000.0
+      }
+    },
+    {
+      "id": "c827a2f3",
+      "is_origin": false,
+      "items": [
+        {
+          "name": "B_2DAssistance",
+          "id": "4385ff84",
+          "is_media": false,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 0.6666666666666667,
+              "y": 0.6666666666666667,
+              "z": 0.6666666666666667
+            }
+          }
+        },
+        {
+          "name": "B_3DAssistance",
+          "id": "836fcbec",
+          "is_media": false,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.2,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 0.6666666666666667,
+              "y": 0.6666666666666667,
+              "z": 0.6666666666666667
+            }
+          }
+        },
+        {
+          "name": "B_VideoAssistance",
+          "id": "8b378df9",
+          "is_media": false,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.4,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 0.6666666666666667,
+              "y": 0.6666666666666667,
+              "z": 0.6666666666666667
+            }
+          }
+        },
+        {
+          "name": "B_OralReport",
+          "id": "66b7c66e",
+          "is_media": false,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.2,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 0.6666666666666667,
+              "y": 0.6666666666666667,
+              "z": 0.6666666666666667
+            }
+          }
+        },
+        {
+          "name": "B_Procedure",
+          "id": "24a6d5d6",
+          "is_media": false,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.2,
+              "y": 0.2,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 0.6666666666666667,
+              "y": 0.6666666666666667,
+              "z": 0.6666666666666667
+            }
+          }
+        },
+        {
+          "name": "B_Assistance1-2D",
+          "id": "d0008293",
+          "is_media": false,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        },
+        {
+          "name": "B_Assistance1-Video",
+          "id": "1c653c77",
+          "is_media": false,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.1,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        },
+        {
+          "name": "B_Assistance1-RM",
+          "id": "58cee8ab",
+          "is_media": false,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.2,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        }
+      ],
+      "name": "Eqt1",
+      "pos": {
+        "x": 780.0,
+        "y": 2400.0
+      }
+    },
+    {
+      "id": "c238d09a",
+      "is_origin": false,
+      "items": [
+        {
+          "name": "B_Assistance1-2D",
+          "id": "3e2bf99b",
+          "is_media": false,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        },
+        {
+          "name": "B_Assistance1-Video",
+          "id": "4f38ac3f",
+          "is_media": false,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.1,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        },
+        {
+          "name": "B_Assistance1-RM",
+          "id": "56eaf032",
+          "is_media": false,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.2,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        }
+      ],
+      "name": "Eqt1-Vue2D",
+      "pos": {
+        "x": 1280.0,
+        "y": 2800.0
+      }
+    },
+    {
+      "id": "4c8a932f",
+      "is_origin": false,
+      "items": [
+        {
+          "name": "B_Assistance1-2D",
+          "id": "c10520c7",
+          "is_media": false,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        },
+        {
+          "name": "B_Assistance1-Video",
+          "id": "9df138b9",
+          "is_media": false,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.1,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        },
+        {
+          "name": "B_Assistance1-RM",
+          "id": "a800f589",
+          "is_media": false,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.2,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        }
+      ],
+      "name": "Eqt1-Vue3D",
+      "pos": {
+        "x": 1280.0,
+        "y": 2400.0
+      }
+    },
+    {
+      "id": "0b6201d2",
+      "is_origin": false,
+      "items": [],
+      "name": "Eqt1-PlanningInterventions",
+      "pos": {
+        "x": 1280.0,
+        "y": 2000.0
+      }
+    },
+    {
+      "id": "5c8e67ab",
+      "is_origin": false,
+      "items": [],
+      "name": "Intervention1",
+      "pos": {
+        "x": 780.0,
+        "y": 3400.0
+      }
+    },
+    {
+      "id": "925f381a",
+      "is_origin": false,
+      "items": [
+        {
+          "name": "I_Intervention1-Autorisations_UI-KO",
+          "id": "bbc87bee",
+          "is_media": true,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          },
+          "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpx1xrtxl0.png",
+          "animation": {
+            "media_path": "Media\\tmpx1xrtxl0.png",
+            "id": "ba6a12f0",
+            "name": "Aucune animation",
+            "duration": 0.0,
+            "transformations": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "transformations_destination": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          "animation_status": "OnceAndClamp"
+        },
+        {
+          "name": "I_Intervention1-Autorisations_UI-OK",
+          "id": "acc94dfa",
+          "is_media": true,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          },
+          "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpakcox7pz.png",
+          "animation": {
+            "media_path": "Media\\tmpakcox7pz.png",
+            "id": "604559a6",
+            "name": "Aucune animation",
+            "duration": 0.0,
+            "transformations": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "transformations_destination": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          "animation_status": "OnceAndClamp"
+        }
+      ],
+      "name": "Intervention1-Autorisations",
+      "pos": {
+        "x": 1280.0,
+        "y": 3600.0
+      }
+    },
+    {
+      "id": "4ddc13fd",
+      "is_origin": false,
+      "items": [
+        {
+          "name": "B_Assistance1-2D",
+          "id": "ef86161a",
+          "is_media": false,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        },
+        {
+          "name": "B_Assistance1-Video",
+          "id": "96262712",
+          "is_media": false,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.1,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        },
+        {
+          "name": "B_Assistance1-RM",
+          "id": "417f4714",
+          "is_media": false,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.2,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        }
+      ],
+      "name": "Intervention1-Procedure",
+      "pos": {
+        "x": 1280.0,
+        "y": 3200.0
+      }
+    },
+    {
+      "id": "6f148af3",
+      "is_origin": false,
+      "items": [],
+      "name": "Assistance1-2D",
+      "pos": {
+        "x": 1780.0,
+        "y": 3200.0
+      }
+    },
+    {
+      "id": "e57568c0",
+      "is_origin": false,
+      "items": [],
+      "name": "Assistance1-Video",
+      "pos": {
+        "x": 1780.0,
+        "y": 2800.0
+      }
+    },
+    {
+      "id": "8a568bf9",
+      "is_origin": false,
+      "items": [],
+      "name": "Assistance1-RM",
+      "pos": {
+        "x": 1780.0,
+        "y": 2400.0
+      }
+    },
+    {
+      "id": "be457830",
+      "is_origin": false,
+      "items": [],
+      "name": "Eqt2",
+      "pos": {
+        "x": 780.0,
+        "y": 1200.0
+      }
+    },
+    {
+      "id": "6bf3a785",
+      "is_origin": false,
+      "items": [],
+      "name": "Intervention2",
+      "pos": {
+        "x": 780.0,
+        "y": 2000.0
+      }
+    },
+    {
+      "id": "0bcf8e1f",
+      "is_origin": false,
+      "items": [],
+      "name": "Intervention2-Procedure",
+      "pos": {
+        "x": 1280.0,
+        "y": 1600.0
+      }
+    },
+    {
+      "id": "accc053d",
+      "is_origin": false,
+      "items": [],
+      "name": "Assistance2-2D",
+      "pos": {
+        "x": 1780.0,
+        "y": 1600.0
+      }
+    },
+    {
+      "id": "1971152d",
+      "is_origin": false,
+      "items": [],
+      "name": "Assistance2-RM",
+      "pos": {
+        "x": 1780.0,
+        "y": 1200.0
+      }
+    }
+  ],
+  "links": [
+    {
+      "from_step": {
+        "id": "2fa4f086",
+        "is_origin": true,
+        "items": [
+          {
+            "name": "Connection-Bouton-Eqt1",
+            "id": "fb79354f",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "Connection-Bouton-Eqt2",
+            "id": "67c9cea1",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "alert",
+            "id": "e10672e5",
+            "is_media": true,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpwircavs0.png",
+            "animation": {
+              "media_path": "Media\\tmpwircavs0.png",
+              "id": "d5926011",
+              "name": "Aucune animation",
+              "duration": 0.0,
+              "transformations": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              },
+              "transformations_destination": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              }
+            },
+            "animation_status": "OnceAndClamp"
+          },
+          {
+            "name": "procedure",
+            "id": "fe8673aa",
+            "is_media": true,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmp77z578ln.png",
+            "animation": {
+              "media_path": "Media\\tmp77z578ln.png",
+              "id": "f3325dcb",
+              "name": "Aucune animation",
+              "duration": 0.0,
+              "transformations": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              },
+              "transformations_destination": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              }
+            },
+            "animation_status": "OnceAndClamp"
+          },
+          {
+            "name": "autorisation",
+            "id": "0ad461de",
+            "is_media": true,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.4,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpvwhd34o6.png",
+            "animation": {
+              "media_path": "Media\\tmpvwhd34o6.png",
+              "id": "22223cc8",
+              "name": "Aucune animation",
+              "duration": 0.0,
+              "transformations": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              },
+              "transformations_destination": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              }
+            },
+            "animation_status": "OnceAndClamp"
+          },
+          {
+            "name": "warning",
+            "id": "37067bb9",
+            "is_media": true,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.6000000000000001,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpvvxrd6bp.png",
+            "animation": {
+              "media_path": "Media\\tmpvvxrd6bp.png",
+              "id": "6bb89bcd",
+              "name": "Aucune animation",
+              "duration": 0.0,
+              "transformations": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              },
+              "transformations_destination": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              }
+            },
+            "animation_status": "OnceAndClamp"
+          }
+        ],
+        "name": "Connection",
+        "pos": {
+          "x": 280.0,
+          "y": 2000.0
+        }
+      },
+      "dest_step": {
+        "id": "c827a2f3",
+        "is_origin": false,
+        "items": [
+          {
+            "name": "B_2DAssistance",
+            "id": "4385ff84",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_3DAssistance",
+            "id": "836fcbec",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.2,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_VideoAssistance",
+            "id": "8b378df9",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.4,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_OralReport",
+            "id": "66b7c66e",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_Procedure",
+            "id": "24a6d5d6",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.2,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-2D",
+            "id": "d0008293",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-Video",
+            "id": "1c653c77",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.1,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-RM",
+            "id": "58cee8ab",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        ],
+        "name": "Eqt1",
+        "pos": {
+          "x": 780.0,
+          "y": 2400.0
+        }
+      },
+      "source_component": {
+        "name": "Connection-Bouton-Eqt1",
+        "id": "fb79354f",
+        "is_media": false,
+        "is_active": true,
+        "position": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": -1.0,
+            "eulerAngles": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "property_identifier": "Component_button_text_interactive_identifier",
+        "nov_component_identifier": "Component_button_text",
+        "to": "c827a2f3"
+      },
+      "id": "81f0bc72"
+    },
+    {
+      "from_step": {
+        "id": "2fa4f086",
+        "is_origin": true,
+        "items": [
+          {
+            "name": "Connection-Bouton-Eqt1",
+            "id": "fb79354f",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "Connection-Bouton-Eqt2",
+            "id": "67c9cea1",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "alert",
+            "id": "e10672e5",
+            "is_media": true,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpwircavs0.png",
+            "animation": {
+              "media_path": "Media\\tmpwircavs0.png",
+              "id": "d5926011",
+              "name": "Aucune animation",
+              "duration": 0.0,
+              "transformations": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              },
+              "transformations_destination": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              }
+            },
+            "animation_status": "OnceAndClamp"
+          },
+          {
+            "name": "procedure",
+            "id": "fe8673aa",
+            "is_media": true,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmp77z578ln.png",
+            "animation": {
+              "media_path": "Media\\tmp77z578ln.png",
+              "id": "f3325dcb",
+              "name": "Aucune animation",
+              "duration": 0.0,
+              "transformations": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              },
+              "transformations_destination": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              }
+            },
+            "animation_status": "OnceAndClamp"
+          },
+          {
+            "name": "autorisation",
+            "id": "0ad461de",
+            "is_media": true,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.4,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpvwhd34o6.png",
+            "animation": {
+              "media_path": "Media\\tmpvwhd34o6.png",
+              "id": "22223cc8",
+              "name": "Aucune animation",
+              "duration": 0.0,
+              "transformations": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              },
+              "transformations_destination": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              }
+            },
+            "animation_status": "OnceAndClamp"
+          },
+          {
+            "name": "warning",
+            "id": "37067bb9",
+            "is_media": true,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.6000000000000001,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpvvxrd6bp.png",
+            "animation": {
+              "media_path": "Media\\tmpvvxrd6bp.png",
+              "id": "6bb89bcd",
+              "name": "Aucune animation",
+              "duration": 0.0,
+              "transformations": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              },
+              "transformations_destination": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              }
+            },
+            "animation_status": "OnceAndClamp"
+          }
+        ],
+        "name": "Connection",
+        "pos": {
+          "x": 280.0,
+          "y": 2000.0
+        }
+      },
+      "dest_step": {
+        "id": "be457830",
+        "is_origin": false,
+        "items": [],
+        "name": "Eqt2",
+        "pos": {
+          "x": 780.0,
+          "y": 1200.0
+        }
+      },
+      "source_component": {
+        "name": "Connection-Bouton-Eqt2",
+        "id": "67c9cea1",
+        "is_media": false,
+        "is_active": true,
+        "position": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": -1.0,
+            "eulerAngles": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "property_identifier": "Component_button_text_interactive_identifier",
+        "nov_component_identifier": "Component_button_text",
+        "to": "be457830"
+      },
+      "id": "1212c2ba"
+    },
+    {
+      "from_step": {
+        "id": "c827a2f3",
+        "is_origin": false,
+        "items": [
+          {
+            "name": "B_2DAssistance",
+            "id": "4385ff84",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_3DAssistance",
+            "id": "836fcbec",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.2,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_VideoAssistance",
+            "id": "8b378df9",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.4,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_OralReport",
+            "id": "66b7c66e",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_Procedure",
+            "id": "24a6d5d6",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.2,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-2D",
+            "id": "d0008293",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-Video",
+            "id": "1c653c77",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.1,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-RM",
+            "id": "58cee8ab",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        ],
+        "name": "Eqt1",
+        "pos": {
+          "x": 780.0,
+          "y": 2400.0
+        }
+      },
+      "dest_step": {
+        "id": "c238d09a",
+        "is_origin": false,
+        "items": [
+          {
+            "name": "B_Assistance1-2D",
+            "id": "3e2bf99b",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-Video",
+            "id": "4f38ac3f",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.1,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-RM",
+            "id": "56eaf032",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        ],
+        "name": "Eqt1-Vue2D",
+        "pos": {
+          "x": 1280.0,
+          "y": 2800.0
+        }
+      },
+      "source_component": {
+        "name": "B_2DAssistance",
+        "id": "4385ff84",
+        "is_media": false,
+        "is_active": true,
+        "position": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": -1.0,
+            "eulerAngles": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "scale": {
+            "x": 0.6666666666666667,
+            "y": 0.6666666666666667,
+            "z": 0.6666666666666667
+          }
+        },
+        "property_identifier": "Component_button_text_interactive_identifier",
+        "nov_component_identifier": "Component_button_text",
+        "to": "c238d09a"
+      },
+      "id": "3d30f1ae"
+    },
+    {
+      "from_step": {
+        "id": "c827a2f3",
+        "is_origin": false,
+        "items": [
+          {
+            "name": "B_2DAssistance",
+            "id": "4385ff84",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_3DAssistance",
+            "id": "836fcbec",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.2,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_VideoAssistance",
+            "id": "8b378df9",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.4,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_OralReport",
+            "id": "66b7c66e",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_Procedure",
+            "id": "24a6d5d6",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.2,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-2D",
+            "id": "d0008293",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-Video",
+            "id": "1c653c77",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.1,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-RM",
+            "id": "58cee8ab",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        ],
+        "name": "Eqt1",
+        "pos": {
+          "x": 780.0,
+          "y": 2400.0
+        }
+      },
+      "dest_step": {
+        "id": "4c8a932f",
+        "is_origin": false,
+        "items": [
+          {
+            "name": "B_Assistance1-2D",
+            "id": "c10520c7",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-Video",
+            "id": "9df138b9",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.1,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-RM",
+            "id": "a800f589",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        ],
+        "name": "Eqt1-Vue3D",
+        "pos": {
+          "x": 1280.0,
+          "y": 2400.0
+        }
+      },
+      "source_component": {
+        "name": "B_3DAssistance",
+        "id": "836fcbec",
+        "is_media": false,
+        "is_active": true,
+        "position": {
+          "position": {
+            "x": 0.2,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": -1.0,
+            "eulerAngles": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "scale": {
+            "x": 0.6666666666666667,
+            "y": 0.6666666666666667,
+            "z": 0.6666666666666667
+          }
+        },
+        "property_identifier": "Component_button_text_interactive_identifier",
+        "nov_component_identifier": "Component_button_text",
+        "to": "4c8a932f"
+      },
+      "id": "528b7880"
+    },
+    {
+      "from_step": {
+        "id": "c827a2f3",
+        "is_origin": false,
+        "items": [
+          {
+            "name": "B_2DAssistance",
+            "id": "4385ff84",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_3DAssistance",
+            "id": "836fcbec",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.2,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_VideoAssistance",
+            "id": "8b378df9",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.4,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_OralReport",
+            "id": "66b7c66e",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_Procedure",
+            "id": "24a6d5d6",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.2,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-2D",
+            "id": "d0008293",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-Video",
+            "id": "1c653c77",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.1,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-RM",
+            "id": "58cee8ab",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        ],
+        "name": "Eqt1",
+        "pos": {
+          "x": 780.0,
+          "y": 2400.0
+        }
+      },
+      "dest_step": {
+        "id": "0b6201d2",
+        "is_origin": false,
+        "items": [],
+        "name": "Eqt1-PlanningInterventions",
+        "pos": {
+          "x": 1280.0,
+          "y": 2000.0
+        }
+      },
+      "source_component": {
+        "name": "B_VideoAssistance",
+        "id": "8b378df9",
+        "is_media": false,
+        "is_active": true,
+        "position": {
+          "position": {
+            "x": 0.4,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": -1.0,
+            "eulerAngles": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "scale": {
+            "x": 0.6666666666666667,
+            "y": 0.6666666666666667,
+            "z": 0.6666666666666667
+          }
+        },
+        "property_identifier": "Component_button_text_interactive_identifier",
+        "nov_component_identifier": "Component_button_text",
+        "to": "0b6201d2"
+      },
+      "id": "1bdfcee8"
+    },
+    {
+      "from_step": {
+        "id": "c827a2f3",
+        "is_origin": false,
+        "items": [
+          {
+            "name": "B_2DAssistance",
+            "id": "4385ff84",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_3DAssistance",
+            "id": "836fcbec",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.2,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_VideoAssistance",
+            "id": "8b378df9",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.4,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_OralReport",
+            "id": "66b7c66e",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_Procedure",
+            "id": "24a6d5d6",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.2,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-2D",
+            "id": "d0008293",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-Video",
+            "id": "1c653c77",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.1,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-RM",
+            "id": "58cee8ab",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        ],
+        "name": "Eqt1",
+        "pos": {
+          "x": 780.0,
+          "y": 2400.0
+        }
+      },
+      "dest_step": {
+        "id": "6f148af3",
+        "is_origin": false,
+        "items": [],
+        "name": "Assistance1-2D",
+        "pos": {
+          "x": 1780.0,
+          "y": 3200.0
+        }
+      },
+      "source_component": {
+        "name": "B_Assistance1-2D",
+        "id": "d0008293",
+        "is_media": false,
+        "is_active": true,
+        "position": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": -1.0,
+            "eulerAngles": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "property_identifier": "Component_button_text_interactive_identifier",
+        "nov_component_identifier": "Component_button_text",
+        "to": "6f148af3"
+      },
+      "id": "bdba7623"
+    },
+    {
+      "from_step": {
+        "id": "c827a2f3",
+        "is_origin": false,
+        "items": [
+          {
+            "name": "B_2DAssistance",
+            "id": "4385ff84",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_3DAssistance",
+            "id": "836fcbec",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.2,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_VideoAssistance",
+            "id": "8b378df9",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.4,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_OralReport",
+            "id": "66b7c66e",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_Procedure",
+            "id": "24a6d5d6",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.2,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-2D",
+            "id": "d0008293",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-Video",
+            "id": "1c653c77",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.1,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-RM",
+            "id": "58cee8ab",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        ],
+        "name": "Eqt1",
+        "pos": {
+          "x": 780.0,
+          "y": 2400.0
+        }
+      },
+      "dest_step": {
+        "id": "e57568c0",
+        "is_origin": false,
+        "items": [],
+        "name": "Assistance1-Video",
+        "pos": {
+          "x": 1780.0,
+          "y": 2800.0
+        }
+      },
+      "source_component": {
+        "name": "B_Assistance1-Video",
+        "id": "1c653c77",
+        "is_media": false,
+        "is_active": true,
+        "position": {
+          "position": {
+            "x": 0.0,
+            "y": 0.1,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": -1.0,
+            "eulerAngles": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "property_identifier": "Component_button_text_interactive_identifier",
+        "nov_component_identifier": "Component_button_text",
+        "to": "e57568c0"
+      },
+      "id": "2c472bb1"
+    },
+    {
+      "from_step": {
+        "id": "c827a2f3",
+        "is_origin": false,
+        "items": [
+          {
+            "name": "B_2DAssistance",
+            "id": "4385ff84",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_3DAssistance",
+            "id": "836fcbec",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.2,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_VideoAssistance",
+            "id": "8b378df9",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.4,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_OralReport",
+            "id": "66b7c66e",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_Procedure",
+            "id": "24a6d5d6",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.2,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 0.6666666666666667,
+                "y": 0.6666666666666667,
+                "z": 0.6666666666666667
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-2D",
+            "id": "d0008293",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-Video",
+            "id": "1c653c77",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.1,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-RM",
+            "id": "58cee8ab",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        ],
+        "name": "Eqt1",
+        "pos": {
+          "x": 780.0,
+          "y": 2400.0
+        }
+      },
+      "dest_step": {
+        "id": "8a568bf9",
+        "is_origin": false,
+        "items": [],
+        "name": "Assistance1-RM",
+        "pos": {
+          "x": 1780.0,
+          "y": 2400.0
+        }
+      },
+      "source_component": {
+        "name": "B_Assistance1-RM",
+        "id": "58cee8ab",
+        "is_media": false,
+        "is_active": true,
+        "position": {
+          "position": {
+            "x": 0.0,
+            "y": 0.2,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": -1.0,
+            "eulerAngles": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "property_identifier": "Component_button_text_interactive_identifier",
+        "nov_component_identifier": "Component_button_text",
+        "to": "8a568bf9"
+      },
+      "id": "a7cc9537"
+    },
+    {
+      "from_step": {
+        "id": "c238d09a",
+        "is_origin": false,
+        "items": [
+          {
+            "name": "B_Assistance1-2D",
+            "id": "3e2bf99b",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-Video",
+            "id": "4f38ac3f",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.1,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-RM",
+            "id": "56eaf032",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        ],
+        "name": "Eqt1-Vue2D",
+        "pos": {
+          "x": 1280.0,
+          "y": 2800.0
+        }
+      },
+      "dest_step": {
+        "id": "6f148af3",
+        "is_origin": false,
+        "items": [],
+        "name": "Assistance1-2D",
+        "pos": {
+          "x": 1780.0,
+          "y": 3200.0
+        }
+      },
+      "source_component": {
+        "name": "B_Assistance1-2D",
+        "id": "3e2bf99b",
+        "is_media": false,
+        "is_active": true,
+        "position": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": -1.0,
+            "eulerAngles": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "property_identifier": "Component_button_text_interactive_identifier",
+        "nov_component_identifier": "Component_button_text",
+        "to": "6f148af3"
+      },
+      "id": "e92b893c"
+    },
+    {
+      "from_step": {
+        "id": "c238d09a",
+        "is_origin": false,
+        "items": [
+          {
+            "name": "B_Assistance1-2D",
+            "id": "3e2bf99b",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-Video",
+            "id": "4f38ac3f",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.1,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-RM",
+            "id": "56eaf032",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        ],
+        "name": "Eqt1-Vue2D",
+        "pos": {
+          "x": 1280.0,
+          "y": 2800.0
+        }
+      },
+      "dest_step": {
+        "id": "e57568c0",
+        "is_origin": false,
+        "items": [],
+        "name": "Assistance1-Video",
+        "pos": {
+          "x": 1780.0,
+          "y": 2800.0
+        }
+      },
+      "source_component": {
+        "name": "B_Assistance1-Video",
+        "id": "4f38ac3f",
+        "is_media": false,
+        "is_active": true,
+        "position": {
+          "position": {
+            "x": 0.0,
+            "y": 0.1,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": -1.0,
+            "eulerAngles": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "property_identifier": "Component_button_text_interactive_identifier",
+        "nov_component_identifier": "Component_button_text",
+        "to": "e57568c0"
+      },
+      "id": "7bcee5c5"
+    },
+    {
+      "from_step": {
+        "id": "c238d09a",
+        "is_origin": false,
+        "items": [
+          {
+            "name": "B_Assistance1-2D",
+            "id": "3e2bf99b",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-Video",
+            "id": "4f38ac3f",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.1,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-RM",
+            "id": "56eaf032",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        ],
+        "name": "Eqt1-Vue2D",
+        "pos": {
+          "x": 1280.0,
+          "y": 2800.0
+        }
+      },
+      "dest_step": {
+        "id": "8a568bf9",
+        "is_origin": false,
+        "items": [],
+        "name": "Assistance1-RM",
+        "pos": {
+          "x": 1780.0,
+          "y": 2400.0
+        }
+      },
+      "source_component": {
+        "name": "B_Assistance1-RM",
+        "id": "56eaf032",
+        "is_media": false,
+        "is_active": true,
+        "position": {
+          "position": {
+            "x": 0.0,
+            "y": 0.2,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": -1.0,
+            "eulerAngles": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "property_identifier": "Component_button_text_interactive_identifier",
+        "nov_component_identifier": "Component_button_text",
+        "to": "8a568bf9"
+      },
+      "id": "3512dc22"
+    },
+    {
+      "from_step": {
+        "id": "4c8a932f",
+        "is_origin": false,
+        "items": [
+          {
+            "name": "B_Assistance1-2D",
+            "id": "c10520c7",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-Video",
+            "id": "9df138b9",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.1,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-RM",
+            "id": "a800f589",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        ],
+        "name": "Eqt1-Vue3D",
+        "pos": {
+          "x": 1280.0,
+          "y": 2400.0
+        }
+      },
+      "dest_step": {
+        "id": "6f148af3",
+        "is_origin": false,
+        "items": [],
+        "name": "Assistance1-2D",
+        "pos": {
+          "x": 1780.0,
+          "y": 3200.0
+        }
+      },
+      "source_component": {
+        "name": "B_Assistance1-2D",
+        "id": "c10520c7",
+        "is_media": false,
+        "is_active": true,
+        "position": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": -1.0,
+            "eulerAngles": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "property_identifier": "Component_button_text_interactive_identifier",
+        "nov_component_identifier": "Component_button_text",
+        "to": "6f148af3"
+      },
+      "id": "e605b8bf"
+    },
+    {
+      "from_step": {
+        "id": "4c8a932f",
+        "is_origin": false,
+        "items": [
+          {
+            "name": "B_Assistance1-2D",
+            "id": "c10520c7",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-Video",
+            "id": "9df138b9",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.1,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-RM",
+            "id": "a800f589",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        ],
+        "name": "Eqt1-Vue3D",
+        "pos": {
+          "x": 1280.0,
+          "y": 2400.0
+        }
+      },
+      "dest_step": {
+        "id": "e57568c0",
+        "is_origin": false,
+        "items": [],
+        "name": "Assistance1-Video",
+        "pos": {
+          "x": 1780.0,
+          "y": 2800.0
+        }
+      },
+      "source_component": {
+        "name": "B_Assistance1-Video",
+        "id": "9df138b9",
+        "is_media": false,
+        "is_active": true,
+        "position": {
+          "position": {
+            "x": 0.0,
+            "y": 0.1,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": -1.0,
+            "eulerAngles": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "property_identifier": "Component_button_text_interactive_identifier",
+        "nov_component_identifier": "Component_button_text",
+        "to": "e57568c0"
+      },
+      "id": "f032b694"
+    },
+    {
+      "from_step": {
+        "id": "4c8a932f",
+        "is_origin": false,
+        "items": [
+          {
+            "name": "B_Assistance1-2D",
+            "id": "c10520c7",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-Video",
+            "id": "9df138b9",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.1,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-RM",
+            "id": "a800f589",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        ],
+        "name": "Eqt1-Vue3D",
+        "pos": {
+          "x": 1280.0,
+          "y": 2400.0
+        }
+      },
+      "dest_step": {
+        "id": "8a568bf9",
+        "is_origin": false,
+        "items": [],
+        "name": "Assistance1-RM",
+        "pos": {
+          "x": 1780.0,
+          "y": 2400.0
+        }
+      },
+      "source_component": {
+        "name": "B_Assistance1-RM",
+        "id": "a800f589",
+        "is_media": false,
+        "is_active": true,
+        "position": {
+          "position": {
+            "x": 0.0,
+            "y": 0.2,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": -1.0,
+            "eulerAngles": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "property_identifier": "Component_button_text_interactive_identifier",
+        "nov_component_identifier": "Component_button_text",
+        "to": "8a568bf9"
+      },
+      "id": "aed65337"
+    },
+    {
+      "from_step": {
+        "id": "4ddc13fd",
+        "is_origin": false,
+        "items": [
+          {
+            "name": "B_Assistance1-2D",
+            "id": "ef86161a",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-Video",
+            "id": "96262712",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.1,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-RM",
+            "id": "417f4714",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        ],
+        "name": "Intervention1-Procedure",
+        "pos": {
+          "x": 1280.0,
+          "y": 3200.0
+        }
+      },
+      "dest_step": {
+        "id": "6f148af3",
+        "is_origin": false,
+        "items": [],
+        "name": "Assistance1-2D",
+        "pos": {
+          "x": 1780.0,
+          "y": 3200.0
+        }
+      },
+      "source_component": {
+        "name": "B_Assistance1-2D",
+        "id": "ef86161a",
+        "is_media": false,
+        "is_active": true,
+        "position": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": -1.0,
+            "eulerAngles": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "property_identifier": "Component_button_text_interactive_identifier",
+        "nov_component_identifier": "Component_button_text",
+        "to": "6f148af3"
+      },
+      "id": "206be432"
+    },
+    {
+      "from_step": {
+        "id": "4ddc13fd",
+        "is_origin": false,
+        "items": [
+          {
+            "name": "B_Assistance1-2D",
+            "id": "ef86161a",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-Video",
+            "id": "96262712",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.1,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-RM",
+            "id": "417f4714",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        ],
+        "name": "Intervention1-Procedure",
+        "pos": {
+          "x": 1280.0,
+          "y": 3200.0
+        }
+      },
+      "dest_step": {
+        "id": "e57568c0",
+        "is_origin": false,
+        "items": [],
+        "name": "Assistance1-Video",
+        "pos": {
+          "x": 1780.0,
+          "y": 2800.0
+        }
+      },
+      "source_component": {
+        "name": "B_Assistance1-Video",
+        "id": "96262712",
+        "is_media": false,
+        "is_active": true,
+        "position": {
+          "position": {
+            "x": 0.0,
+            "y": 0.1,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": -1.0,
+            "eulerAngles": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "property_identifier": "Component_button_text_interactive_identifier",
+        "nov_component_identifier": "Component_button_text",
+        "to": "e57568c0"
+      },
+      "id": "c9ff3cef"
+    },
+    {
+      "from_step": {
+        "id": "4ddc13fd",
+        "is_origin": false,
+        "items": [
+          {
+            "name": "B_Assistance1-2D",
+            "id": "ef86161a",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-Video",
+            "id": "96262712",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.1,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          {
+            "name": "B_Assistance1-RM",
+            "id": "417f4714",
+            "is_media": false,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.2,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        ],
+        "name": "Intervention1-Procedure",
+        "pos": {
+          "x": 1280.0,
+          "y": 3200.0
+        }
+      },
+      "dest_step": {
+        "id": "8a568bf9",
+        "is_origin": false,
+        "items": [],
+        "name": "Assistance1-RM",
+        "pos": {
+          "x": 1780.0,
+          "y": 2400.0
+        }
+      },
+      "source_component": {
+        "name": "B_Assistance1-RM",
+        "id": "417f4714",
+        "is_media": false,
+        "is_active": true,
+        "position": {
+          "position": {
+            "x": 0.0,
+            "y": 0.2,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": -1.0,
+            "eulerAngles": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "property_identifier": "Component_button_text_interactive_identifier",
+        "nov_component_identifier": "Component_button_text",
+        "to": "8a568bf9"
+      },
+      "id": "bd103975"
+    }
+  ],
+  "animations": [
+    {
+      "media_path": "Media\\tmpwircavs0.png",
+      "id": "d5926011",
+      "name": "Aucune animation",
+      "duration": 0.0,
+      "transformations": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0,
+          "eulerAngles": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "transformations_destination": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0,
+          "eulerAngles": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "media_path": "Media\\tmp77z578ln.png",
+      "id": "f3325dcb",
+      "name": "Aucune animation",
+      "duration": 0.0,
+      "transformations": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0,
+          "eulerAngles": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "transformations_destination": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0,
+          "eulerAngles": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "media_path": "Media\\tmpvwhd34o6.png",
+      "id": "22223cc8",
+      "name": "Aucune animation",
+      "duration": 0.0,
+      "transformations": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0,
+          "eulerAngles": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "transformations_destination": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0,
+          "eulerAngles": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "media_path": "Media\\tmpvvxrd6bp.png",
+      "id": "6bb89bcd",
+      "name": "Aucune animation",
+      "duration": 0.0,
+      "transformations": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0,
+          "eulerAngles": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "transformations_destination": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0,
+          "eulerAngles": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "media_path": "Media\\tmpx1xrtxl0.png",
+      "id": "ba6a12f0",
+      "name": "Aucune animation",
+      "duration": 0.0,
+      "transformations": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0,
+          "eulerAngles": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "transformations_destination": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0,
+          "eulerAngles": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "media_path": "Media\\tmpakcox7pz.png",
+      "id": "604559a6",
+      "name": "Aucune animation",
+      "duration": 0.0,
+      "transformations": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0,
+          "eulerAngles": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "transformations_destination": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0,
+          "eulerAngles": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    }
+  ],
+  "last_date_save": "2024-05-23T16:02:54.371437+01:00"
+}

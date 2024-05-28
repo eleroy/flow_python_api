@@ -1,7 +1,7 @@
 import copy
 import re
 from pathlib import Path
-from typing import List
+from typing import List, TypedDict
 
 from pydantic import BaseModel, Field
 import xmltodict
@@ -13,6 +13,36 @@ from .tools import get_uuid
 class StepPos(BaseModel):
     x: float = 0
     y: float = 0
+
+
+{
+    "StepIdentifier": {"Id": "65a5acba"},
+    "DisplayName": "Étape 02",
+    "ComponentMetadataIdentifiers": [{"Id": "b14b53a1"}],
+    "MediaMetadataIdentifiers": [],
+},
+
+
+class FlowStepPosDict(TypedDict):
+    x: float
+    y: float
+
+
+class FlowIdDict(TypedDict):
+    Id: str
+
+
+class FlowStepDict(TypedDict):
+    StepIdentifier: FlowIdDict
+    DisplayName: str
+    ComponentMetadataIdentifiers: list[FlowIdDict]
+    MediaMetadataIdentifiers: list[FlowIdDict]
+
+
+class FlowStepMetadataDict(TypedDict):
+    StepIdentifier: FlowIdDict
+    IsScenarioOrigin: bool
+    LocalPositionInScenario: FlowStepPosDict
 
 
 class Step(BaseModel):
@@ -163,3 +193,15 @@ class Step(BaseModel):
             item_ids[item.id] = item_clone.id
         new_step.id = get_uuid()
         return new_step
+
+    def set_metadata(self, metadata: FlowStepMetadataDict):
+        self.pos.x = metadata["LocalPositionInScenario"]["x"]
+        self.pos.y = metadata["LocalPositionInScenario"]["x"]
+        self.is_origin = metadata["IsScenarioOrigin"]
+
+    @staticmethod
+    def parse(step_dict: FlowStepDict, metadata: FlowStepMetadataDict = None):
+        ##TODO how to parse for components ?
+        step = Step(id=step_dict["StepIdentifier"]["Id"], name=step_dict["DisplayName"])
+        step.set_metadata(metadata=metadata)
+        return step

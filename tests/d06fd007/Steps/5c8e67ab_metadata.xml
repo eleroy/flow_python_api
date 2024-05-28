@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StepMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<StepIdentifier>
+		<Id>5c8e67ab</Id>
+	</StepIdentifier>
+	<IsScenarioOrigin>false</IsScenarioOrigin>
+	<LocalPositionInScenario>
+		<x>780</x>
+		<y>3400.0</y>
+	</LocalPositionInScenario>
+</StepMetadata>

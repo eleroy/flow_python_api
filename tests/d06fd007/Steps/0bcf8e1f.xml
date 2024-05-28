@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Step xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<StepIdentifier>
+		<Id>0bcf8e1f</Id>
+	</StepIdentifier>
+	<DisplayName>Intervention2-Procedure</DisplayName>
+	<ComponentMetadataIdentifiers/>
+	<MediaMetadataIdentifiers/>
+</Step>

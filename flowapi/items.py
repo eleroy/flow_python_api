@@ -182,8 +182,10 @@ class Media(Item):
                     "propertyIdentifier": "ItemPropertyAnimationIdentifier",
                     "title": "Animation",
                     "ItemIdentifier": {"Id": self.id},
-                    "value": {"animationIdentifier": {"Id": self.animation.id}},
-                    "playAnimationStatus": self.animation_status,
+                    "value": {
+                        "animationIdentifier": {"Id": self.animation.id},
+                        "playAnimationStatus": self.animation_status,
+                    },
                 }
             ]
         )
@@ -521,16 +523,18 @@ def parseMedia(
             ),
         ),
     )
-    animation = Animation(
-        id=comp_data["Properties"]["AbstractProperty"][2]["value"][
-            "animationIdentifier"
-        ]["Id"]
-    )
+    id_anim = comp_data["Properties"]["AbstractProperty"][2]["value"][
+        "animationIdentifier"
+    ]["Id"]
+    if id_anim:
+        animation = Animation(id=id_anim)
+    else:
+        animation = Animation()
 
     new_component.animation = animation
     new_component.animation_status = comp_data["Properties"]["AbstractProperty"][2][
-        "playAnimationStatus"
-    ]
+        "value"
+    ]["playAnimationStatus"]
     new_component.set_path(dest_file)
 
     ## TODO : parse media animation

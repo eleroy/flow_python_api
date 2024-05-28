@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Step xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<StepIdentifier>
+		<Id>925f381a</Id>
+	</StepIdentifier>
+	<DisplayName>Intervention1-Autorisations</DisplayName>
+	<ComponentMetadataIdentifiers/>
+	<MediaMetadataIdentifiers>
+		<ItemIdentifier>
+			<Id>bbc87bee</Id>
+		</ItemIdentifier>
+		<ItemIdentifier>
+			<Id>acc94dfa</Id>
+		</ItemIdentifier>
+	</MediaMetadataIdentifiers>
+</Step>

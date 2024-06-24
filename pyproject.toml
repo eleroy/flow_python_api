@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "flowapi"
-version = "0.1.4"
+version = "0.1.5"
 description = "An Api to interact with the Flow Hololens software from Holoforge"
 authors = ["Edouard Leroy <edouard.leroy@cea.fr>"]
 license = "MIT"

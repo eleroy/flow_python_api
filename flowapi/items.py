@@ -1,10 +1,9 @@
 import copy
-import shutil
 from pathlib import Path
 
 from pydantic import BaseModel, Field
 
-from .animation import Animation
+
 from .tools import (
     FullPosition,
     PositionXYZ,
@@ -12,8 +11,6 @@ from .tools import (
     get_uuid,
     get_quaternion_from_euler,
 )
-import tempfile
-from PIL import Image
 
 
 class Item(BaseModel):
@@ -158,53 +155,6 @@ class BoutonText(Component):
         return self
 
 
-class Media(Item):
-    path: str | Path
-    name: str = "Media"
-    is_media: bool = True
-    animation: Animation = Field(default_factory=Animation)
-    animation_status: str = "OnceAndClamp"
-
-    def model_post_init(self, __context):
-        self.animation = Animation(media_path="Media\\" + Path(self.path).name)
-
-    def set_path(self, path):
-        self.path = path
-        self.animation.media_path = "Media\\" + Path(self.path).name
-        return self
-
-    def get_xml(self):
-        item_dict = self.get_item_xml()
-        item_dict["Properties"]["AbstractProperty"].extend(
-            [
-                {
-                    "@xsi:type": "AnimationProperty",
-                    "propertyIdentifier": "ItemPropertyAnimationIdentifier",
-                    "title": "Animation",
-                    "ItemIdentifier": {"Id": self.id},
-                    "value": {
-                        "animationIdentifier": {"Id": self.animation.id},
-                        "playAnimationStatus": self.animation_status,
-                    },
-                }
-            ]
-        )
-        item_dict["PathInDatabase"] = "Media\\" + Path(self.path).name
-        item_dict["InternalHierarchy"] = None
-        return item_dict
-
-    def set_width(self, width_m):
-        self.set_scale(width_m, width_m, width_m)
-
-    @staticmethod
-    def get_placeholder(name: str = "Placeholder", type_file=".png"):
-        temp_file = tempfile.NamedTemporaryFile(delete=False, suffix=type_file)
-        path = Path(temp_file.name)
-        image_placeholder = Image.new("RGB", (100, 100))
-        image_placeholder.save(path, "PNG")
-        return Media(path=path, name=name)
-
-
 class BoutonSimple(Component):
     name: str = "Bouton simple"
     property_identifier: str = "Component_button_simple_interactive_identifier"
@@ -226,6 +176,54 @@ class BoutonSimple(Component):
                         "isActive": True,
                     },
                 }
+            ]
+        )
+        item_dict["NovComponentIdentifier"] = {"Id": self.nov_component_identifier}
+        return item_dict
+
+    def set_size(self, diameter_m):
+        self.set_scale(
+            diameter_m / self.base_width_m,
+            diameter_m / self.base_width_m,
+            diameter_m / self.base_width_m,
+        )
+        return self
+
+
+class BoutonImage(Component):
+    name: str = "Bouton image"
+    path: str | Path = ""
+    property_identifier: str = "Component_button_image_interactive_identifier"
+    base_width_m: float = 0.15
+    nov_component_identifier: str = "Component_button_simple"
+
+    def get_target_image_name(self):
+        return f"{self.id}_Component_button_image_identifier{self.path.suffix}"
+
+    def get_xml(self):
+        # Copy image to Scenarios/scenario_id/Steps/Extra
+        # filename itemID_Component_button_image_identifier_344f57d6
+        item_dict = self.get_item_xml()
+        item_dict["Properties"]["AbstractProperty"].extend(
+            [
+                {
+                    "@xsi:type": "ImageProperty",
+                    "propertyIdentifier": "Component_button_image_identifier",
+                    "title": "Icône",
+                    "ItemIdentifier": {"Id": self.id},
+                    "value": self.get_target_image_name(),
+                },
+                {
+                    "@xsi:type": "InteractiveProperty",
+                    "propertyIdentifier": self.property_identifier,
+                    "title": "Bouton suivant",
+                    "ItemIdentifier": {"Id": self.id},
+                    "value": {
+                        "displayInProperties": False,
+                        "interactiveDirection": "Next",
+                        "isActive": True,
+                    },
+                },
             ]
         )
         item_dict["NovComponentIdentifier"] = {"Id": self.nov_component_identifier}
@@ -481,70 +479,4 @@ def parseComponent(components, links, component_id):
         except ValueError:
             print("Not found")
             pass
-    return new_component
-
-
-def parseMedia(
-    medias,
-    animations,
-    media_id,
-    scenario_path,
-    saving_media_path=Path.cwd().joinpath("temp"),
-):
-    if not isinstance(medias["ArrayOfMediaMetadata"]["MediaMetadata"], list):
-        media_data = [medias["ArrayOfMediaMetadata"]["MediaMetadata"]]
-    else:
-        media_data = medias["ArrayOfMediaMetadata"]["MediaMetadata"]
-    media_ids = [c["ItemIdentifier"]["Id"] for c in media_data]
-    comp_index = media_ids.index(media_id)
-    comp_data = media_data[comp_index]
-    saving_media_path.mkdir(exist_ok=True)
-    origin_file = Path(scenario_path).joinpath(comp_data["PathInDatabase"])
-    dest_file = saving_media_path.joinpath(origin_file.name)
-    shutil.copyfile(origin_file, dest_file)
-    new_component = Media(
-        path=dest_file,
-        id=comp_data["ItemIdentifier"]["Id"],
-        is_active=comp_data["IsActive"],
-        name=comp_data["Properties"]["AbstractProperty"][0]["value"],
-        position=FullPosition(
-            position=PositionXYZ.model_validate(
-                comp_data["Properties"]["AbstractProperty"][1]["value"]["position"]
-            ),
-            rotation=RotationXYZ.from_euler_angles(
-                PositionXYZ.model_validate(
-                    comp_data["Properties"]["AbstractProperty"][1]["value"]["rotation"][
-                        "eulerAngles"
-                    ]
-                )
-            ),
-            scale=PositionXYZ.model_validate(
-                comp_data["Properties"]["AbstractProperty"][1]["value"]["scale"]
-            ),
-        ),
-    )
-    id_anim = comp_data["Properties"]["AbstractProperty"][2]["value"][
-        "animationIdentifier"
-    ]["Id"]
-    if id_anim:
-        animation = Animation(id=id_anim)
-    else:
-        animation = Animation()
-
-    new_component.animation = animation
-    new_component.animation_status = comp_data["Properties"]["AbstractProperty"][2][
-        "value"
-    ]["playAnimationStatus"]
-    new_component.set_path(dest_file)
-
-    ## TODO : parse media animation
-    # if(not isinstance(animations["ArrayOfFlowAnimation"]["Animation"], list)):
-    #     link_data = [animations["ArrayOfLinkArrayOfFlowAnimation"]["ComponentMetadata"]]
-    # else:
-    #     link_data = animations["ArrayOfLink"]["Link"]
-    # links_comp_id = [link["ComponentMetadataIdentifier"]["Id"] for link in link_data]
-    # try:
-    #     link_index = links_comp_id.index(new_component.id)
-    # except ValueError:
-    #     pass
     return new_component

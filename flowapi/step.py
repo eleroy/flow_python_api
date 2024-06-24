@@ -6,7 +6,9 @@ from typing import List, TypedDict
 from pydantic import BaseModel, Field
 import xmltodict
 
-from .items import Item, Media, Component
+from .media import Media
+
+from .items import Item, Component
 from .tools import get_uuid
 
 

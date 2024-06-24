@@ -2,10 +2,11 @@ from pathlib import Path
 
 import xmltodict
 
+from flowapi.media import parseMedia
 from flowapi.step import StepPos
 import flowapi.tools
 from flowapi import Scenario, Step
-from flowapi.items import parseComponent, parseMedia
+from flowapi.items import parseComponent
 
 
 def parseScenario(scenario_path: Path):

@@ -1,11 +1,9 @@
 from pathlib import Path
 import flowapi
-import flowapi.scenario_parser
 
 scenario = flowapi.Scenario(name="sqdqsdsqd")
 step_connection = scenario.add_step(flowapi.Step(name="Connection", origin=True))
 step_connection.set_pos_grid(0, 5)
-
 step_eqt_1 = scenario.add_step(flowapi.Step(name="Eqt1"))
 step_eqt_1.set_pos_grid(1, 6)
 step_eqt_1_vue_2d = scenario.add_step(flowapi.Step(name="Eqt1-Vue2D"))
@@ -81,6 +79,8 @@ bouton_connect_eqt_1 = step_connection.add(
         name="Connection-Bouton-Eqt1", value="Equipement 1"
     ).set_position(**position_bouton_connection)
 )
+blip = flowapi.AudioMedia.get_blip()
+step_connection.add(blip)
 bouton_connect_eqt_1.target(step_eqt_1)
 bouton_connect_eqt_2 = step_connection.add(
     flowapi.BoutonText(
@@ -149,7 +149,7 @@ SCENARIO_PATH.mkdir(exist_ok=True, parents=True)
 path = scenario.save_scenario(SCENARIO_PATH)
 open("test_dump_scenario.json", "w").write(scenario.model_dump_json(indent=2))
 
-scenario = flowapi.scenario_parser.parseScenario(path)
+scenario = flowapi.parseScenario(path)
 scenario.id = "00000000"
 scenario.name = "Scenario cloné"
 scenario.save_scenario(SCENARIO_PATH)

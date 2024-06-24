@@ -1,4 +1,4 @@
-from flowapi.items import Item, Component, BoutonText, Media
+from flowapi import Media, Item, Component, BoutonText
 
 item = Item(name="test")
 print(item)

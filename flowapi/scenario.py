@@ -8,8 +8,10 @@ from typing import List
 from pydantic import BaseModel, Field
 import xmltodict
 
+from .media import Media, parseMedia
+
 from .step import Step
-from .items import Media, Component, parseComponent, parseMedia
+from .items import Component, parseComponent
 from .link import Link
 from .animation import Animation
 from .tools import get_uuid, global_scenario_path, uuid_list

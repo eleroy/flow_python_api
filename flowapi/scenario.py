@@ -75,10 +75,13 @@ class Scenario(BaseModel):
 
     def get_animation_xml(self):
         self.animations = []
+        anim_ids = []
         for step in self.steps:
             for item in step.items:
                 if isinstance(item, Media):
-                    self.animations.append(item.animation)
+                    if(item.animation.id not in anim_ids):
+                        self.animations.append(item.animation)
+                        anim_ids.append(item.animation.id)
 
         animation_dict = {
             "ArrayOfFlowAnimation": {
@@ -343,8 +346,10 @@ class Scenario(BaseModel):
         new_scenario.steps = new_steps
         for step in new_scenario.steps:
             for item in step.items:
-                if hasattr(item, "to"):
-                    step.to = new_scenario.get_step_by_id(step_ids[step.to.id]).id
+                if isinstance(item, Component):
+                    if item.to:
+                        print(item.to)
+                        item.to = new_scenario.get_step_by_id(step_ids[item.to]).id
         return new_scenario
 
     @staticmethod

@@ -5,7 +5,7 @@ from flowapi.items import Item
 
 
 from PIL import Image
-from pydantic import Field
+from pydantic import BaseModel, Field
 
 
 import tempfile
@@ -14,12 +14,25 @@ from pathlib import Path
 from flowapi.tools import FullPosition, PositionXYZ, RotationXYZ
 
 
+class ValueTupleOfStringBooleanModel(BaseModel):
+    Item1: str
+    Item2: bool
+
+
+class InternalHierarchyModel(BaseModel):
+    ValueTupleOfStringBoolean: (
+        list[ValueTupleOfStringBooleanModel] | ValueTupleOfStringBooleanModel
+    )
+
+
 class Media(Item):
     path: str | Path
     name: str = "Media"
     is_media: bool = True
     animation: Animation = Field(default_factory=Animation)
     animation_status: str = "OnceAndClamp"
+    internal_hierarchy: InternalHierarchyModel | None = None
+    root_content_path: str | None = Field(default=None)
 
     def model_post_init(self, __context):
         self.animation = Animation(media_path="Media\\" + Path(self.path).name)
@@ -49,6 +62,10 @@ class Media(Item):
         )
         item_dict["PathInDatabase"] = "Media\\" + Path(self.path).name
         item_dict["InternalHierarchy"] = None
+        if self.internal_hierarchy:
+            item_dict["InternalHierarchy"] = self.internal_hierarchy.model_dump()
+        if self.root_content_path:
+            item_dict["RootContentPath"] = self.root_content_path
         return item_dict
 
     def set_width(self, width_m):
@@ -152,29 +169,25 @@ def parseMedia(
                 comp_data["Properties"]["AbstractProperty"][1]["value"]["scale"]
             ),
         ),
+        internal_hierarchy=comp_data["InternalHierarchy"],
     )
+    if "RootContentPath" in comp_data:
+        new_component.root_content_path = comp_data["RootContentPath"]
     id_anim = comp_data["Properties"]["AbstractProperty"][2]["value"][
         "animationIdentifier"
     ]["Id"]
     if id_anim:
-        animation = Animation(id=id_anim)
+        animation = None
+        for anim in animations["ArrayOfFlowAnimation"]["FlowAnimation"]:
+            if anim["AnimationIdentifier"]["Id"] == id_anim:
+                animation = Animation.parse(anim)
+                break
+        if animation is None:
+            animation = Animation(id=id_anim)
     else:
+        print("empty animation")
         animation = Animation()
 
     new_component.animation = animation
-    new_component.animation_status = comp_data["Properties"]["AbstractProperty"][2][
-        "value"
-    ]["playAnimationStatus"]
     new_component.set_path(dest_file)
-
-    ## TODO : parse media animation
-    # if(not isinstance(animations["ArrayOfFlowAnimation"]["Animation"], list)):
-    #     link_data = [animations["ArrayOfLinkArrayOfFlowAnimation"]["ComponentMetadata"]]
-    # else:
-    #     link_data = animations["ArrayOfLink"]["Link"]
-    # links_comp_id = [link["ComponentMetadataIdentifier"]["Id"] for link in link_data]
-    # try:
-    #     link_index = links_comp_id.index(new_component.id)
-    # except ValueError:
-    #     pass
     return new_component

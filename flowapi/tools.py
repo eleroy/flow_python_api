@@ -27,6 +27,7 @@ class RotationXYZ(BaseModel):
         self.y = full_rotation.y
         self.z = full_rotation.z
         self.w = full_rotation.w
+        self.eulerAngles = rotation_euler_angles
 
     @staticmethod
     def from_euler_angles(eulerAngles: PositionXYZ):
@@ -72,7 +73,7 @@ def get_quaternion_from_euler(eulerAngles: PositionXYZ) -> RotationXYZ:
         roll / 2
     ) * math.sin(pitch / 2) * math.sin(yaw / 2)
 
-    return RotationXYZ(x=-qx, y=-qy, z=-qz, w=-qw, eulerAngles=eulerAngles)
+    return RotationXYZ(x=qx, y=qy, z=qz, w=qw, eulerAngles=eulerAngles)
 
 
 def get_uuid():

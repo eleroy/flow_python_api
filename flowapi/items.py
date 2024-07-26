@@ -239,7 +239,7 @@ class BoutonImage(Component):
 
 
 class Timer(Component):
-    duration: float
+    duration: float = 1.0
     name: str = "Timer"
     property_identifier: str = "Component_timer_interactive_identifier"
     nov_component_identifier: str = "Component_timer"
@@ -311,9 +311,13 @@ class Texte(Component):
     value: str = "Texte"
     base_width_m: float = 1
     nov_component_identifier: str = "Component_text"
+    show_background: bool = False
 
     def parse(self, component_dict):
-        self.value = component_dict["Properties"]["AbstractProperty"][2]["value"]
+        self.value = component_dict["Properties"]["AbstractProperty"][3]["value"]
+        self.show_background = component_dict["Properties"]["AbstractProperty"][2][
+            "value"
+        ]
 
     def get_xml(self):
         item_dict = self.get_item_xml()
@@ -326,7 +330,14 @@ class Texte(Component):
                     "propertyIdentifier": "Component_text_description_identifier",
                     "title": "Texte",
                     "value": self.value,
-                }
+                },
+                {
+                    "@xsi:type": "BoolProperty",
+                    "ItemIdentifier": {"Id": self.id},
+                    "propertyIdentifier": "Component_text_show_background_identifier",
+                    "title": "Afficher le fond",
+                    "value": self.show_background,
+                },
             ]
         )
         item_dict["NovComponentIdentifier"] = {"Id": self.nov_component_identifier}
@@ -420,6 +431,85 @@ class Panneau(Component):
         return self
 
 
+class CEACustom(Component):
+    name: str = "CUSTOM_Eqt1_UI"
+    titre: str = "Title"
+    description: str = "Description"
+    image: str | None = None
+    property_identifier: str = (
+        "Component_panel_formation_button_next_interactive_identifier"
+    )
+    base_width_m: float = 1
+    nov_component_identifier: str = "Component_CEA"
+
+    def parse(self, component_dict):
+        self.titre = component_dict["Properties"]["AbstractProperty"][2]["value"]
+        self.description = component_dict["Properties"]["AbstractProperty"][3]["value"]
+        self.image = component_dict["Properties"]["AbstractProperty"][4]["value"]
+
+    def get_xml(self):
+        item_dict = self.get_item_xml()
+        item_dict["Properties"]["AbstractProperty"].extend(
+            [
+                {
+                    "@xsi:type": "ShortStringProperty",
+                    "AllowEmpty": "false",
+                    "ItemIdentifier": {"Id": self.id},
+                    "propertyIdentifier": "Component_panel_formation_title_identifier",
+                    "title": "Titre",
+                    "value": self.titre,
+                },
+                {
+                    "@xsi:type": "LongStringProperty",
+                    "AllowEmpty": "false",
+                    "ItemIdentifier": {"Id": self.id},
+                    "propertyIdentifier": "Component_panel_formation_description_identifier",
+                    "title": "Description",
+                    "value": self.description,
+                },
+                {
+                    "@xsi:type": "ImageProperty",
+                    "ItemIdentifier": {"Id": self.id},
+                    "propertyIdentifier": "Component_panel_formation_image_identifier",
+                    "title": "Image",
+                    "value": self.image,
+                },
+                {
+                    "@xsi:type": "InteractiveProperty",
+                    "ItemIdentifier": {"Id": self.id},
+                    "propertyIdentifier": "Component_panel_formation_button_next_interactive_identifier",
+                    "title": "Bouton suivant",
+                    "value": {
+                        "displayInProperties": "true",
+                        "interactiveDirection": "Next",
+                        "isActive": "true",
+                    },
+                },
+                {
+                    "@xsi:type": "InteractiveProperty",
+                    "ItemIdentifier": {"Id": self.id},
+                    "propertyIdentifier": "Component_panel_formation_button_previous_interactive_identifier",
+                    "title": "Bouton précédent",
+                    "value": {
+                        "displayInProperties": "true",
+                        "interactiveDirection": "Previous",
+                        "isActive": "true",
+                    },
+                },
+            ]
+        )
+        item_dict["NovComponentIdentifier"] = {"Id": self.nov_component_identifier}
+        return item_dict
+
+    def set_size(self, diameter_m):
+        self.set_scale(
+            diameter_m / self.base_width_m,
+            diameter_m / self.base_width_m,
+            diameter_m / self.base_width_m,
+        )
+        return self
+
+
 components_object = [BoutonText, BoutonSimple, Texte, Timer, Zone, Panneau]
 
 
@@ -439,7 +529,9 @@ def parseComponent(components, links, component_id):
     comp_data = components_data[comp_index]
     new_component = Component(name="New Component")
     for cmp in components_object:
+        print(comp_data["ItemIdentifier"]["Id"])
         if comp_data["NovComponentIdentifier"]["Id"] == cmp().nov_component_identifier:
+
             new_component = cmp(
                 id=comp_data["ItemIdentifier"]["Id"],
                 name=comp_data["Properties"]["AbstractProperty"][0]["value"],
@@ -464,8 +556,9 @@ def parseComponent(components, links, component_id):
             break
     new_component.parse(comp_data)
     if "Link" in links["ArrayOfLink"].keys():
+        print(links["ArrayOfLink"])
         if not isinstance(links["ArrayOfLink"]["Link"], list):
-            link_data = [links["ArrayOfLink"]["ComponentMetadata"]]
+            link_data = [links["ArrayOfLink"]["Link"]]
         else:
             link_data = links["ArrayOfLink"]["Link"]
         links_comp_id = [

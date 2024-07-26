@@ -7,7 +7,7 @@ from flowapi.step import StepPos
 import flowapi.tools
 from flowapi import Scenario, Step
 from flowapi.items import parseComponent
-
+import json
 
 def parseScenario(scenario_path: Path):
     config_file = scenario_path.joinpath("config.xml")
@@ -19,6 +19,8 @@ def parseScenario(scenario_path: Path):
     animation_file = scenario_path.joinpath("animations.xml")
     with open(animation_file, "r", encoding="utf-8") as f:
         animation_data = xmltodict.parse(f.read())
+    json.dump(animation_data,open("animation_json.json","w"))
+    
     component_file = scenario_path.joinpath("component_metadatas.xml")
     with open(component_file, "r", encoding="utf-8") as f:
         component_data = xmltodict.parse(f.read())

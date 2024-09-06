@@ -90,7 +90,7 @@ def parseScenario(scenario_path: Path):
                     ]
                 ]
         for component in comp_id:
-            new_component = parseComponent(component_data, links_data, component)
+            new_component = parseComponent(component_data, links_data, component, scenario_path)
             if new_component is not None:
                 uuids.append(new_component.id)
                 step_obj.add(new_component)

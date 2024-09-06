@@ -13,17 +13,12 @@ from pathlib import Path
 
 from flowapi.tools import FullPosition, PositionXYZ, RotationXYZ
 
-
 class ValueTupleOfStringBooleanModel(BaseModel):
-    Item1: str
-    Item2: bool
-
+    Item1:str
+    Item2:bool
 
 class InternalHierarchyModel(BaseModel):
-    ValueTupleOfStringBoolean: (
-        list[ValueTupleOfStringBooleanModel] | ValueTupleOfStringBooleanModel
-    )
-
+    ValueTupleOfStringBoolean: list[ValueTupleOfStringBooleanModel] | ValueTupleOfStringBooleanModel
 
 class Media(Item):
     path: str | Path
@@ -35,11 +30,11 @@ class Media(Item):
     root_content_path: str | None = Field(default=None)
 
     def model_post_init(self, __context):
-        self.animation = Animation(media_path="Media\\" + Path(self.path).name)
+        self.animation = Animation(media_path="Media\\" + self.id+Path(self.path).suffix)
 
     def set_path(self, path):
         self.path = path
-        self.animation.media_path = "Media\\" + Path(self.path).name
+        self.animation.media_path = "Media\\" + self.id+Path(self.path).suffix
         return self
 
     def get_xml(self):
@@ -60,10 +55,12 @@ class Media(Item):
                 }
             ]
         )
-        item_dict["PathInDatabase"] = "Media\\" + Path(self.path).name
+        item_dict["PathInDatabase"] = "Media\\" + self.id+Path(self.path).suffix
         item_dict["InternalHierarchy"] = None
         if self.internal_hierarchy:
             item_dict["InternalHierarchy"] = self.internal_hierarchy.model_dump()
+        else:
+            item_dict["OverridenInternalHierarchy"] = None
         if self.root_content_path:
             item_dict["RootContentPath"] = self.root_content_path
         return item_dict
@@ -117,7 +114,7 @@ class AudioMedia(Media):
     @staticmethod
     def get_placeholder(name: str = "AudioPlaceholder"):
         file_path = Path(__file__).parent.joinpath("sounds").joinpath("silence2s.mp3")
-        return Media(path=file_path, name=name)
+        return AudioMedia(path=file_path, name=name)
 
     @staticmethod
     def get_blip(
@@ -128,7 +125,7 @@ class AudioMedia(Media):
             file_path = sound_directory.joinpath("blip.mp3")
         elif blip_type == "blip2":
             file_path = sound_directory.joinpath("blip2.mp3")
-        return Media(path=file_path, name=name)
+        return AudioMedia(path=file_path, name=name)
 
 
 def parseMedia(
@@ -169,7 +166,8 @@ def parseMedia(
                 comp_data["Properties"]["AbstractProperty"][1]["value"]["scale"]
             ),
         ),
-        internal_hierarchy=comp_data["InternalHierarchy"],
+        internal_hierarchy=comp_data["InternalHierarchy"] if "InternalHierarchy" in comp_data else comp_data["OverridenInternalHierarchy"]
+
     )
     if "RootContentPath" in comp_data:
         new_component.root_content_path = comp_data["RootContentPath"]
@@ -179,8 +177,8 @@ def parseMedia(
     if id_anim:
         animation = None
         for anim in animations["ArrayOfFlowAnimation"]["FlowAnimation"]:
-            if anim["AnimationIdentifier"]["Id"] == id_anim:
-                animation = Animation.parse(anim)
+            if anim["AnimationIdentifier"]["Id"] == id_anim:                
+                animation = Animation.parse(anim)               
                 break
         if animation is None:
             animation = Animation(id=id_anim)

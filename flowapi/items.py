@@ -192,16 +192,21 @@ class BoutonSimple(Component):
 
 class BoutonImage(Component):
     name: str = "Bouton image"
+    image_filename: str = ""
     path: str | Path = ""
     property_identifier: str = "Component_button_image_interactive_identifier"
     base_width_m: float = 0.15
     nov_component_identifier: str = "Component_button_simple"
 
     def get_target_image_name(self):
+        return self.image_filename
         return f"{self.id}_Component_button_image_identifier{self.path.suffix}"
 
+    def parse(self, component_dict):
+        self.image_filename = component_dict["Properties"]["AbstractProperty"][2]["value"]
+
     def get_xml(self):
-        # Copy image to Scenarios/scenario_id/Steps/Extra
+        # TODO:Copy image to Scenarios/scenario_id/Steps/Extra
         # filename itemID_Component_button_image_identifier_344f57d6
         item_dict = self.get_item_xml()
         item_dict["Properties"]["AbstractProperty"].extend(
@@ -315,9 +320,7 @@ class Texte(Component):
 
     def parse(self, component_dict):
         self.value = component_dict["Properties"]["AbstractProperty"][3]["value"]
-        self.show_background = component_dict["Properties"]["AbstractProperty"][2][
-            "value"
-        ]
+        self.show_background = component_dict["Properties"]["AbstractProperty"][2]["value"]
 
     def get_xml(self):
         item_dict = self.get_item_xml()
@@ -430,7 +433,6 @@ class Panneau(Component):
         )
         return self
 
-
 class CEACustom(Component):
     name: str = "CUSTOM_Eqt1_UI"
     titre: str = "Title"
@@ -510,10 +512,11 @@ class CEACustom(Component):
         return self
 
 
-components_object = [BoutonText, BoutonSimple, Texte, Timer, Zone, Panneau]
+
+components_object = [BoutonText, BoutonSimple, BoutonImage, Texte, Timer, Zone, Panneau]
 
 
-def parseComponent(components, links, component_id):
+def parseComponent(components, links, component_id, scenario_path):
     if not isinstance(
         components["ArrayOfComponentMetadata"]["ComponentMetadata"], list
     ):
@@ -531,7 +534,8 @@ def parseComponent(components, links, component_id):
     for cmp in components_object:
         print(comp_data["ItemIdentifier"]["Id"])
         if comp_data["NovComponentIdentifier"]["Id"] == cmp().nov_component_identifier:
-
+            if comp_data["Properties"]["AbstractProperty"][2]["propertyIdentifier"]=="Component_button_image_identifier" and cmp != BoutonImage:
+                continue
             new_component = cmp(
                 id=comp_data["ItemIdentifier"]["Id"],
                 name=comp_data["Properties"]["AbstractProperty"][0]["value"],
@@ -555,6 +559,8 @@ def parseComponent(components, links, component_id):
             )
             break
     new_component.parse(comp_data)
+    if isinstance(new_component, BoutonImage):
+        new_component.path = Path(scenario_path).joinpath("Steps/Extras").joinpath(new_component.get_target_image_name())
     if "Link" in links["ArrayOfLink"].keys():
         print(links["ArrayOfLink"])
         if not isinstance(links["ArrayOfLink"]["Link"], list):

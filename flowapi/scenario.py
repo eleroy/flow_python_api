@@ -1,5 +1,6 @@
 import copy
 import datetime
+from html.entities import name2codepoint
 import re
 import shutil
 from pathlib import Path
@@ -8,10 +9,10 @@ from typing import List
 from pydantic import BaseModel, Field
 import xmltodict
 
-from .media import Media, parseMedia
+from .media import Media, parseMedia, AudioMedia
 
 from .step import Step
-from .items import Component, parseComponent
+from .items import Component, parseComponent, BoutonImage
 from .link import Link
 from .animation import Animation
 from .tools import get_uuid, global_scenario_path, uuid_list
@@ -78,7 +79,7 @@ class Scenario(BaseModel):
         anim_ids = []
         for step in self.steps:
             for item in step.items:
-                if isinstance(item, Media):
+                if isinstance(item, Media) or isinstance(item, AudioMedia):
                     if(item.animation.id not in anim_ids):
                         self.animations.append(item.animation)
                         anim_ids.append(item.animation.id)
@@ -165,12 +166,21 @@ class Scenario(BaseModel):
                     items.append(item)
         return items
 
-    def get_components_xml(self):
+    def get_components_xml(self, output_folder):
         items = []
+        icon_dir = Path(output_folder).joinpath(self.id).joinpath("Steps/Extras")
         for step in self.steps:
             for item in step.items:
                 if not item.is_media:
                     items.append(item)
+                    print(type(item))                     
+                    if isinstance(item, BoutonImage):
+                        print("copying icon")
+                        icon_dir.mkdir(exist_ok=True, parents=True)
+                        shutil.copyfile(
+                            Path(item.path), icon_dir.joinpath(item.get_target_image_name())
+                        )
+
         component_dict = {
             "ArrayOfComponentMetadata": {
                 "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
@@ -186,9 +196,9 @@ class Scenario(BaseModel):
         items = []
         for step in self.steps:
             for item in step.items:
-                if type(item) is Media:
+                if type(item) in [Media, AudioMedia]:
                     shutil.copyfile(
-                        Path(item.path), media_dir.joinpath(Path(item.path).name)
+                        Path(item.path), media_dir.joinpath(item.id+Path(item.path).suffix)
                     )
                     items.append(item)
         metadata_xml = [item.get_xml() for item in items]
@@ -236,7 +246,7 @@ class Scenario(BaseModel):
         with open(component_file, "w", encoding="utf-8") as fp:
             fp.write(
                 xmltodict.unparse(
-                    self.get_components_xml(), pretty=True, short_empty_elements=True
+                    self.get_components_xml(output_folder), pretty=True, short_empty_elements=True
                 )
             )
 
@@ -299,6 +309,8 @@ class Scenario(BaseModel):
 
     def find_steps_from_regex(self, name_regex: re.Pattern | str):
         if type(name_regex) is str:
+            if not name_regex.endswith("$"): #Adds $ to match end of string
+                name_regex += "$"
             regex = re.compile(name_regex)
         elif type(name_regex) is re.Pattern:
             regex = name_regex
@@ -326,6 +338,7 @@ class Scenario(BaseModel):
             step_regex = ".*" if step_regex == "*" else step_regex
             matched_steps = self.find_steps_from_regex(step_regex)
         item_regex = ".*" if item_regex == "*" else item_regex
+        
         if not matched_steps:
             return []
         matched_items = []
@@ -348,7 +361,6 @@ class Scenario(BaseModel):
             for item in step.items:
                 if isinstance(item, Component):
                     if item.to:
-                        print(item.to)
                         item.to = new_scenario.get_step_by_id(step_ids[item.to]).id
         return new_scenario
 
@@ -357,7 +369,6 @@ class Scenario(BaseModel):
         config_file = scenario_path.joinpath("config.xml")
         with open(config_file, "r", encoding="utf-8") as f:
             config_data = xmltodict.parse(f.read())
-        print(config_data)
         uuids = []
         uuids.extend([])
         animation_file = scenario_path.joinpath("animations.xml")
@@ -366,7 +377,6 @@ class Scenario(BaseModel):
         component_file = scenario_path.joinpath("component_metadatas.xml")
         with open(component_file, "r", encoding="utf-8") as f:
             component_data = xmltodict.parse(f.read())
-        print(component_data)
 
         link_file = scenario_path.joinpath("links.xml")
         with open(link_file, "r", encoding="utf-8") as f:
@@ -430,7 +440,7 @@ class Scenario(BaseModel):
                         ]["Id"]
                     ]
             for component in comp_id:
-                new_component = parseComponent(component_data, links_data, component)
+                new_component = parseComponent(component_data, links_data, component, scenario_path)
                 if new_component is not None:
                     uuids.append(new_component.id)
                     step_obj.add(new_component)

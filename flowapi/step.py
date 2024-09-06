@@ -166,6 +166,8 @@ class Step(BaseModel):
 
     def find_items_from_regex(self, name_regex: re.Pattern | str):
         if type(name_regex) is str:
+            if not name_regex.endswith("$"):
+                name_regex += "$"
             regex = re.compile(name_regex)
         elif type(name_regex) is re.Pattern:
             regex = name_regex

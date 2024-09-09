@@ -24,6 +24,7 @@ class Media(Item):
     path: str | Path
     name: str = "Media"
     is_media: bool = True
+    internal_media: bool = False
     animation: Animation = Field(default_factory=Animation)
     animation_status: str = "OnceAndClamp"
     internal_hierarchy: InternalHierarchyModel | None = None
@@ -55,7 +56,10 @@ class Media(Item):
                 }
             ]
         )
-        item_dict["PathInDatabase"] = "Media\\" + self.id+Path(self.path).suffix
+        if not self.internal_media:
+            item_dict["PathInDatabase"] = "Media\\" + self.id+Path(self.path).suffix
+        else:
+            item_dict["PathInDatabase"] = f"{self.path}"
         item_dict["InternalHierarchy"] = None
         if self.internal_hierarchy:
             item_dict["InternalHierarchy"] = self.internal_hierarchy.model_dump()
@@ -143,13 +147,19 @@ def parseMedia(
     comp_index = media_ids.index(media_id)
     comp_data = media_data[comp_index]
     saving_media_path.mkdir(exist_ok=True)
-    origin_file = Path(scenario_path).joinpath(comp_data["PathInDatabase"])
-    dest_file = saving_media_path.joinpath(origin_file.name)
-    shutil.copyfile(origin_file, dest_file)
+    internal = False
+    if comp_data["PathInDatabase"].split("\\")[0] == "Media":
+        origin_file = Path(scenario_path).joinpath(comp_data["PathInDatabase"])
+        dest_file = saving_media_path.joinpath(origin_file.name)
+        shutil.copyfile(origin_file, dest_file)
+    else:
+        dest_file = comp_data["PathInDatabase"]
+        internal = True
     new_component = Media(
         path=dest_file,
         id=comp_data["ItemIdentifier"]["Id"],
         is_active=comp_data["IsActive"],
+        internal_media=internal,
         name=comp_data["Properties"]["AbstractProperty"][0]["value"],
         position=FullPosition(
             position=PositionXYZ.model_validate(

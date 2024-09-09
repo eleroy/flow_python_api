@@ -197,9 +197,10 @@ class Scenario(BaseModel):
         for step in self.steps:
             for item in step.items:
                 if type(item) in [Media, AudioMedia]:
-                    shutil.copyfile(
-                        Path(item.path), media_dir.joinpath(item.id+Path(item.path).suffix)
-                    )
+                    if not item.internal_media:
+                        shutil.copyfile(
+                            Path(item.path), media_dir.joinpath(item.id+Path(item.path).suffix)
+                        )
                     items.append(item)
         metadata_xml = [item.get_xml() for item in items]
         component_dict = {

@@ -31,11 +31,17 @@ class Media(Item):
     root_content_path: str | None = Field(default=None)
 
     def model_post_init(self, __context):
-        self.animation = Animation(media_path="Media\\" + self.id+Path(self.path).suffix)
+        if self.internal_media:
+            self.animation.media_path = self.path
+        else:
+            self.animation = Animation(media_path="Media\\" + self.id+Path(self.path).suffix)
 
     def set_path(self, path):
         self.path = path
-        self.animation.media_path = "Media\\" + self.id+Path(self.path).suffix
+        if self.internal_media:
+            self.animation.media_path = self.path
+        else:
+            self.animation.media_path = "Media\\" + self.id+Path(self.path).suffix
         return self
 
     def get_xml(self):

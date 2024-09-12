@@ -199,7 +199,6 @@ def parseMedia(
         if animation is None:
             animation = Animation(id=id_anim)
     else:
-        print("empty animation")
         animation = Animation()
 
     new_component.animation = animation

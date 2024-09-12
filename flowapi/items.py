@@ -532,7 +532,6 @@ def parseComponent(components, links, component_id, scenario_path):
     comp_data = components_data[comp_index]
     new_component = Component(name="New Component")
     for cmp in components_object:
-        print(comp_data["ItemIdentifier"]["Id"])
         if comp_data["NovComponentIdentifier"]["Id"] == cmp().nov_component_identifier:
             if comp_data["Properties"]["AbstractProperty"][2]["propertyIdentifier"]=="Component_button_image_identifier" and cmp != BoutonImage:
                 continue
@@ -562,7 +561,6 @@ def parseComponent(components, links, component_id, scenario_path):
     if isinstance(new_component, BoutonImage):
         new_component.path = Path(scenario_path).joinpath("Steps/Extras").joinpath(new_component.get_target_image_name())
     if "Link" in links["ArrayOfLink"].keys():
-        print(links["ArrayOfLink"])
         if not isinstance(links["ArrayOfLink"]["Link"], list):
             link_data = [links["ArrayOfLink"]["Link"]]
         else:
@@ -570,12 +568,10 @@ def parseComponent(components, links, component_id, scenario_path):
         links_comp_id = [
             link["ComponentMetadataIdentifier"]["Id"] for link in link_data
         ]
-        print("Link ids ", links_comp_id)
-        print("Comp id ", new_component.id)
+        
         try:
             link_index = links_comp_id.index(new_component.id)
             new_component.target(link_data[link_index]["DestinationIdentifier"]["Id"])
         except ValueError:
-            print("Not found")
             pass
     return new_component

@@ -13,12 +13,17 @@ from pathlib import Path
 
 from flowapi.tools import FullPosition, PositionXYZ, RotationXYZ
 
+
 class ValueTupleOfStringBooleanModel(BaseModel):
-    Item1:str
-    Item2:bool
+    Item1: str
+    Item2: bool
+
 
 class InternalHierarchyModel(BaseModel):
-    ValueTupleOfStringBoolean: list[ValueTupleOfStringBooleanModel] | ValueTupleOfStringBooleanModel
+    ValueTupleOfStringBoolean: (
+        list[ValueTupleOfStringBooleanModel] | ValueTupleOfStringBooleanModel
+    )
+
 
 class Media(Item):
     path: str | Path
@@ -31,11 +36,13 @@ class Media(Item):
     root_content_path: str | None = Field(default=None)
 
     def model_post_init(self, __context):
-        self.animation = Animation(media_path="Media\\" + self.id+Path(self.path).suffix)
+        self.animation = Animation(
+            media_path="Media\\" + self.id + Path(self.path).suffix
+        )
 
     def set_path(self, path):
         self.path = path
-        self.animation.media_path = "Media\\" + self.id+Path(self.path).suffix
+        self.animation.media_path = "Media\\" + self.id + Path(self.path).suffix
         return self
 
     def get_xml(self):
@@ -57,7 +64,7 @@ class Media(Item):
             ]
         )
         if not self.internal_media:
-            item_dict["PathInDatabase"] = "Media\\" + self.id+Path(self.path).suffix
+            item_dict["PathInDatabase"] = "Media\\" + self.id + Path(self.path).suffix
         else:
             item_dict["PathInDatabase"] = f"{self.path}"
         item_dict["InternalHierarchy"] = None
@@ -155,7 +162,10 @@ def parseMedia(
     else:
         dest_file = comp_data["PathInDatabase"]
         internal = True
-    new_component = Media(
+    MEDIA_CONSTRUCTOR: Media | AudioMedia = Media
+    if Path(dest_file).suffix == ".mp3":
+        MEDIA_CONSTRUCTOR = AudioMedia
+    new_component = MEDIA_CONSTRUCTOR(
         path=dest_file,
         id=comp_data["ItemIdentifier"]["Id"],
         is_active=comp_data["IsActive"],
@@ -176,8 +186,11 @@ def parseMedia(
                 comp_data["Properties"]["AbstractProperty"][1]["value"]["scale"]
             ),
         ),
-        internal_hierarchy=comp_data["InternalHierarchy"] if "InternalHierarchy" in comp_data else comp_data["OverridenInternalHierarchy"]
-
+        internal_hierarchy=(
+            comp_data["InternalHierarchy"]
+            if "InternalHierarchy" in comp_data
+            else comp_data["OverridenInternalHierarchy"]
+        ),
     )
     if "RootContentPath" in comp_data:
         new_component.root_content_path = comp_data["RootContentPath"]
@@ -187,8 +200,8 @@ def parseMedia(
     if id_anim:
         animation = None
         for anim in animations["ArrayOfFlowAnimation"]["FlowAnimation"]:
-            if anim["AnimationIdentifier"]["Id"] == id_anim:                
-                animation = Animation.parse(anim)               
+            if anim["AnimationIdentifier"]["Id"] == id_anim:
+                animation = Animation.parse(anim)
                 break
         if animation is None:
             animation = Animation(id=id_anim)

@@ -9,12 +9,12 @@
   "description": null,
   "steps": [
     {
-      "id": "2fa4f086",
+      "id": "839f20a9",
       "is_origin": true,
       "items": [
         {
           "name": "Connection-Bouton-Eqt1",
-          "id": "fb79354f",
+          "id": "71f90c6f",
           "is_media": false,
           "is_active": true,
           "position": {
@@ -43,7 +43,7 @@
         },
         {
           "name": "Connection-Bouton-Eqt2",
-          "id": "67c9cea1",
+          "id": "9b1c7030",
           "is_media": false,
           "is_active": true,
           "position": {
@@ -71,8 +71,8 @@
           }
         },
         {
-          "name": "alert",
-          "id": "e10672e5",
+          "name": "AudioBlip",
+          "id": "a1d85bd7",
           "is_media": true,
           "is_active": true,
           "position": {
@@ -98,10 +98,93 @@
               "z": 1.0
             }
           },
-          "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpwircavs0.png",
+          "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\blip.mp3",
           "animation": {
-            "media_path": "Media\\tmpwircavs0.png",
-            "id": "d5926011",
+            "media_path": "Media\\blip.mp3",
+            "id": "906f6988",
+            "name": "Aucune animation",
+            "duration": 0.0,
+            "transformations": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "transformations_destination": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          "animation_status": "OnceAndClamp"
+        },
+        {
+          "name": "alert",
+          "id": "d83eb363",
+          "is_media": true,
+          "is_active": true,
+          "position": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -1.0,
+              "eulerAngles": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          },
+          "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpcw_tcnrb.png",
+          "animation": {
+            "media_path": "Media\\tmpcw_tcnrb.png",
+            "id": "faef6461",
             "name": "Aucune animation",
             "duration": 0.0,
             "transformations": {
@@ -155,7 +238,7 @@
         },
         {
           "name": "procedure",
-          "id": "fe8673aa",
+          "id": "f9045575",
           "is_media": true,
           "is_active": true,
           "position": {
@@ -181,10 +264,10 @@
               "z": 1.0
             }
           },
-          "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmp77z578ln.png",
+          "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpsunhkqqh.png",
           "animation": {
-            "media_path": "Media\\tmp77z578ln.png",
-            "id": "f3325dcb",
+            "media_path": "Media\\tmpsunhkqqh.png",
+            "id": "806340dc",
             "name": "Aucune animation",
             "duration": 0.0,
             "transformations": {
@@ -238,7 +321,7 @@
         },
         {
           "name": "autorisation",
-          "id": "0ad461de",
+          "id": "12ac2bc7",
           "is_media": true,
           "is_active": true,
           "position": {
@@ -264,10 +347,10 @@
               "z": 1.0
             }
           },
-          "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpvwhd34o6.png",
+          "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmp0s1i203s.png",
           "animation": {
-            "media_path": "Media\\tmpvwhd34o6.png",
-            "id": "22223cc8",
+            "media_path": "Media\\tmp0s1i203s.png",
+            "id": "2c0a6823",
             "name": "Aucune animation",
             "duration": 0.0,
             "transformations": {
@@ -321,7 +404,7 @@
         },
         {
           "name": "warning",
-          "id": "37067bb9",
+          "id": "ed2c59c8",
           "is_media": true,
           "is_active": true,
           "position": {
@@ -347,10 +430,10 @@
               "z": 1.0
             }
           },
-          "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpvvxrd6bp.png",
+          "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmprytc05jx.png",
           "animation": {
-            "media_path": "Media\\tmpvvxrd6bp.png",
-            "id": "6bb89bcd",
+            "media_path": "Media\\tmprytc05jx.png",
+            "id": "5fd9fdeb",
             "name": "Aucune animation",
             "duration": 0.0,
             "transformations": {
@@ -410,12 +493,12 @@
       }
     },
     {
-      "id": "c827a2f3",
+      "id": "f61f2110",
       "is_origin": false,
       "items": [
         {
           "name": "B_2DAssistance",
-          "id": "4385ff84",
+          "id": "964e1e58",
           "is_media": false,
           "is_active": true,
           "position": {
@@ -444,7 +527,7 @@
         },
         {
           "name": "B_3DAssistance",
-          "id": "836fcbec",
+          "id": "58d77da9",
           "is_media": false,
           "is_active": true,
           "position": {
@@ -473,7 +556,7 @@
         },
         {
           "name": "B_VideoAssistance",
-          "id": "8b378df9",
+          "id": "17656d13",
           "is_media": false,
           "is_active": true,
           "position": {
@@ -502,7 +585,7 @@
         },
         {
           "name": "B_OralReport",
-          "id": "66b7c66e",
+          "id": "5a8e6297",
           "is_media": false,
           "is_active": true,
           "position": {
@@ -531,7 +614,7 @@
         },
         {
           "name": "B_Procedure",
-          "id": "24a6d5d6",
+          "id": "f4ffd5cf",
           "is_media": false,
           "is_active": true,
           "position": {
@@ -560,7 +643,7 @@
         },
         {
           "name": "B_Assistance1-2D",
-          "id": "d0008293",
+          "id": "1b5097ba",
           "is_media": false,
           "is_active": true,
           "position": {
@@ -589,7 +672,7 @@
         },
         {
           "name": "B_Assistance1-Video",
-          "id": "1c653c77",
+          "id": "e1fd95a8",
           "is_media": false,
           "is_active": true,
           "position": {
@@ -618,7 +701,7 @@
         },
         {
           "name": "B_Assistance1-RM",
-          "id": "58cee8ab",
+          "id": "1c6df699",
           "is_media": false,
           "is_active": true,
           "position": {
@@ -653,12 +736,12 @@
       }
     },
     {
-      "id": "c238d09a",
+      "id": "0c59444d",
       "is_origin": false,
       "items": [
         {
           "name": "B_Assistance1-2D",
-          "id": "3e2bf99b",
+          "id": "d5a1585e",
           "is_media": false,
           "is_active": true,
           "position": {
@@ -687,7 +770,7 @@
         },
         {
           "name": "B_Assistance1-Video",
-          "id": "4f38ac3f",
+          "id": "2c19d96a",
           "is_media": false,
           "is_active": true,
           "position": {
@@ -716,7 +799,7 @@
         },
         {
           "name": "B_Assistance1-RM",
-          "id": "56eaf032",
+          "id": "561ebb95",
           "is_media": false,
           "is_active": true,
           "position": {
@@ -751,12 +834,12 @@
       }
     },
     {
-      "id": "4c8a932f",
+      "id": "8b7a7c14",
       "is_origin": false,
       "items": [
         {
           "name": "B_Assistance1-2D",
-          "id": "c10520c7",
+          "id": "7e87f560",
           "is_media": false,
           "is_active": true,
           "position": {
@@ -785,7 +868,7 @@
         },
         {
           "name": "B_Assistance1-Video",
-          "id": "9df138b9",
+          "id": "143b34da",
           "is_media": false,
           "is_active": true,
           "position": {
@@ -814,7 +897,7 @@
         },
         {
           "name": "B_Assistance1-RM",
-          "id": "a800f589",
+          "id": "e2fdebb6",
           "is_media": false,
           "is_active": true,
           "position": {
@@ -849,7 +932,7 @@
       }
     },
     {
-      "id": "0b6201d2",
+      "id": "e7903697",
       "is_origin": false,
       "items": [],
       "name": "Eqt1-PlanningInterventions",
@@ -859,7 +942,7 @@
       }
     },
     {
-      "id": "5c8e67ab",
+      "id": "8b150b82",
       "is_origin": false,
       "items": [],
       "name": "Intervention1",
@@ -869,12 +952,12 @@
       }
     },
     {
-      "id": "925f381a",
+      "id": "44910f15",
       "is_origin": false,
       "items": [
         {
           "name": "I_Intervention1-Autorisations_UI-KO",
-          "id": "bbc87bee",
+          "id": "883eff47",
           "is_media": true,
           "is_active": true,
           "position": {
@@ -900,10 +983,10 @@
               "z": 1.0
             }
           },
-          "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpx1xrtxl0.png",
+          "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmprizbb_jf.png",
           "animation": {
-            "media_path": "Media\\tmpx1xrtxl0.png",
-            "id": "ba6a12f0",
+            "media_path": "Media\\tmprizbb_jf.png",
+            "id": "1b1a8125",
             "name": "Aucune animation",
             "duration": 0.0,
             "transformations": {
@@ -957,7 +1040,7 @@
         },
         {
           "name": "I_Intervention1-Autorisations_UI-OK",
-          "id": "acc94dfa",
+          "id": "0a4e6c70",
           "is_media": true,
           "is_active": true,
           "position": {
@@ -983,10 +1066,10 @@
               "z": 1.0
             }
           },
-          "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpakcox7pz.png",
+          "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpqqgl53rz.png",
           "animation": {
-            "media_path": "Media\\tmpakcox7pz.png",
-            "id": "604559a6",
+            "media_path": "Media\\tmpqqgl53rz.png",
+            "id": "5690aa2b",
             "name": "Aucune animation",
             "duration": 0.0,
             "transformations": {
@@ -1046,12 +1129,12 @@
       }
     },
     {
-      "id": "4ddc13fd",
+      "id": "ccb3a38b",
       "is_origin": false,
       "items": [
         {
           "name": "B_Assistance1-2D",
-          "id": "ef86161a",
+          "id": "ac5d8e3e",
           "is_media": false,
           "is_active": true,
           "position": {
@@ -1080,7 +1163,7 @@
         },
         {
           "name": "B_Assistance1-Video",
-          "id": "96262712",
+          "id": "20bb9e46",
           "is_media": false,
           "is_active": true,
           "position": {
@@ -1109,7 +1192,7 @@
         },
         {
           "name": "B_Assistance1-RM",
-          "id": "417f4714",
+          "id": "64d32531",
           "is_media": false,
           "is_active": true,
           "position": {
@@ -1144,7 +1227,7 @@
       }
     },
     {
-      "id": "6f148af3",
+      "id": "5afe1b68",
       "is_origin": false,
       "items": [],
       "name": "Assistance1-2D",
@@ -1154,7 +1237,7 @@
       }
     },
     {
-      "id": "e57568c0",
+      "id": "58d3e852",
       "is_origin": false,
       "items": [],
       "name": "Assistance1-Video",
@@ -1164,7 +1247,7 @@
       }
     },
     {
-      "id": "8a568bf9",
+      "id": "8bf13223",
       "is_origin": false,
       "items": [],
       "name": "Assistance1-RM",
@@ -1174,7 +1257,7 @@
       }
     },
     {
-      "id": "be457830",
+      "id": "5a9cbfca",
       "is_origin": false,
       "items": [],
       "name": "Eqt2",
@@ -1184,7 +1267,7 @@
       }
     },
     {
-      "id": "6bf3a785",
+      "id": "715fe260",
       "is_origin": false,
       "items": [],
       "name": "Intervention2",
@@ -1194,7 +1277,7 @@
       }
     },
     {
-      "id": "0bcf8e1f",
+      "id": "0a5f5c65",
       "is_origin": false,
       "items": [],
       "name": "Intervention2-Procedure",
@@ -1204,7 +1287,7 @@
       }
     },
     {
-      "id": "accc053d",
+      "id": "97bc0695",
       "is_origin": false,
       "items": [],
       "name": "Assistance2-2D",
@@ -1214,7 +1297,7 @@
       }
     },
     {
-      "id": "1971152d",
+      "id": "f9a283c4",
       "is_origin": false,
       "items": [],
       "name": "Assistance2-RM",
@@ -1227,12 +1310,12 @@
   "links": [
     {
       "from_step": {
-        "id": "2fa4f086",
+        "id": "839f20a9",
         "is_origin": true,
         "items": [
           {
             "name": "Connection-Bouton-Eqt1",
-            "id": "fb79354f",
+            "id": "71f90c6f",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -1261,7 +1344,7 @@
           },
           {
             "name": "Connection-Bouton-Eqt2",
-            "id": "67c9cea1",
+            "id": "9b1c7030",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -1289,8 +1372,8 @@
             }
           },
           {
-            "name": "alert",
-            "id": "e10672e5",
+            "name": "AudioBlip",
+            "id": "a1d85bd7",
             "is_media": true,
             "is_active": true,
             "position": {
@@ -1316,10 +1399,93 @@
                 "z": 1.0
               }
             },
-            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpwircavs0.png",
+            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\blip.mp3",
             "animation": {
-              "media_path": "Media\\tmpwircavs0.png",
-              "id": "d5926011",
+              "media_path": "Media\\blip.mp3",
+              "id": "906f6988",
+              "name": "Aucune animation",
+              "duration": 0.0,
+              "transformations": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              },
+              "transformations_destination": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              }
+            },
+            "animation_status": "OnceAndClamp"
+          },
+          {
+            "name": "alert",
+            "id": "d83eb363",
+            "is_media": true,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpcw_tcnrb.png",
+            "animation": {
+              "media_path": "Media\\tmpcw_tcnrb.png",
+              "id": "faef6461",
               "name": "Aucune animation",
               "duration": 0.0,
               "transformations": {
@@ -1373,7 +1539,7 @@
           },
           {
             "name": "procedure",
-            "id": "fe8673aa",
+            "id": "f9045575",
             "is_media": true,
             "is_active": true,
             "position": {
@@ -1399,10 +1565,10 @@
                 "z": 1.0
               }
             },
-            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmp77z578ln.png",
+            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpsunhkqqh.png",
             "animation": {
-              "media_path": "Media\\tmp77z578ln.png",
-              "id": "f3325dcb",
+              "media_path": "Media\\tmpsunhkqqh.png",
+              "id": "806340dc",
               "name": "Aucune animation",
               "duration": 0.0,
               "transformations": {
@@ -1456,7 +1622,7 @@
           },
           {
             "name": "autorisation",
-            "id": "0ad461de",
+            "id": "12ac2bc7",
             "is_media": true,
             "is_active": true,
             "position": {
@@ -1482,10 +1648,10 @@
                 "z": 1.0
               }
             },
-            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpvwhd34o6.png",
+            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmp0s1i203s.png",
             "animation": {
-              "media_path": "Media\\tmpvwhd34o6.png",
-              "id": "22223cc8",
+              "media_path": "Media\\tmp0s1i203s.png",
+              "id": "2c0a6823",
               "name": "Aucune animation",
               "duration": 0.0,
               "transformations": {
@@ -1539,7 +1705,7 @@
           },
           {
             "name": "warning",
-            "id": "37067bb9",
+            "id": "ed2c59c8",
             "is_media": true,
             "is_active": true,
             "position": {
@@ -1565,10 +1731,10 @@
                 "z": 1.0
               }
             },
-            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpvvxrd6bp.png",
+            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmprytc05jx.png",
             "animation": {
-              "media_path": "Media\\tmpvvxrd6bp.png",
-              "id": "6bb89bcd",
+              "media_path": "Media\\tmprytc05jx.png",
+              "id": "5fd9fdeb",
               "name": "Aucune animation",
               "duration": 0.0,
               "transformations": {
@@ -1628,12 +1794,12 @@
         }
       },
       "dest_step": {
-        "id": "c827a2f3",
+        "id": "f61f2110",
         "is_origin": false,
         "items": [
           {
             "name": "B_2DAssistance",
-            "id": "4385ff84",
+            "id": "964e1e58",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -1662,7 +1828,7 @@
           },
           {
             "name": "B_3DAssistance",
-            "id": "836fcbec",
+            "id": "58d77da9",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -1691,7 +1857,7 @@
           },
           {
             "name": "B_VideoAssistance",
-            "id": "8b378df9",
+            "id": "17656d13",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -1720,7 +1886,7 @@
           },
           {
             "name": "B_OralReport",
-            "id": "66b7c66e",
+            "id": "5a8e6297",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -1749,7 +1915,7 @@
           },
           {
             "name": "B_Procedure",
-            "id": "24a6d5d6",
+            "id": "f4ffd5cf",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -1778,7 +1944,7 @@
           },
           {
             "name": "B_Assistance1-2D",
-            "id": "d0008293",
+            "id": "1b5097ba",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -1807,7 +1973,7 @@
           },
           {
             "name": "B_Assistance1-Video",
-            "id": "1c653c77",
+            "id": "e1fd95a8",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -1836,7 +2002,7 @@
           },
           {
             "name": "B_Assistance1-RM",
-            "id": "58cee8ab",
+            "id": "1c6df699",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -1872,7 +2038,7 @@
       },
       "source_component": {
         "name": "Connection-Bouton-Eqt1",
-        "id": "fb79354f",
+        "id": "71f90c6f",
         "is_media": false,
         "is_active": true,
         "position": {
@@ -1900,18 +2066,18 @@
         },
         "property_identifier": "Component_button_text_interactive_identifier",
         "nov_component_identifier": "Component_button_text",
-        "to": "c827a2f3"
+        "to": "f61f2110"
       },
-      "id": "81f0bc72"
+      "id": "0ce691ec"
     },
     {
       "from_step": {
-        "id": "2fa4f086",
+        "id": "839f20a9",
         "is_origin": true,
         "items": [
           {
             "name": "Connection-Bouton-Eqt1",
-            "id": "fb79354f",
+            "id": "71f90c6f",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -1940,7 +2106,7 @@
           },
           {
             "name": "Connection-Bouton-Eqt2",
-            "id": "67c9cea1",
+            "id": "9b1c7030",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -1968,8 +2134,8 @@
             }
           },
           {
-            "name": "alert",
-            "id": "e10672e5",
+            "name": "AudioBlip",
+            "id": "a1d85bd7",
             "is_media": true,
             "is_active": true,
             "position": {
@@ -1995,10 +2161,93 @@
                 "z": 1.0
               }
             },
-            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpwircavs0.png",
+            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\blip.mp3",
             "animation": {
-              "media_path": "Media\\tmpwircavs0.png",
-              "id": "d5926011",
+              "media_path": "Media\\blip.mp3",
+              "id": "906f6988",
+              "name": "Aucune animation",
+              "duration": 0.0,
+              "transformations": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              },
+              "transformations_destination": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0,
+                  "eulerAngles": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0,
+                  "z": 1.0
+                }
+              }
+            },
+            "animation_status": "OnceAndClamp"
+          },
+          {
+            "name": "alert",
+            "id": "d83eb363",
+            "is_media": true,
+            "is_active": true,
+            "position": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": -1.0,
+                "eulerAngles": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpcw_tcnrb.png",
+            "animation": {
+              "media_path": "Media\\tmpcw_tcnrb.png",
+              "id": "faef6461",
               "name": "Aucune animation",
               "duration": 0.0,
               "transformations": {
@@ -2052,7 +2301,7 @@
           },
           {
             "name": "procedure",
-            "id": "fe8673aa",
+            "id": "f9045575",
             "is_media": true,
             "is_active": true,
             "position": {
@@ -2078,10 +2327,10 @@
                 "z": 1.0
               }
             },
-            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmp77z578ln.png",
+            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpsunhkqqh.png",
             "animation": {
-              "media_path": "Media\\tmp77z578ln.png",
-              "id": "f3325dcb",
+              "media_path": "Media\\tmpsunhkqqh.png",
+              "id": "806340dc",
               "name": "Aucune animation",
               "duration": 0.0,
               "transformations": {
@@ -2135,7 +2384,7 @@
           },
           {
             "name": "autorisation",
-            "id": "0ad461de",
+            "id": "12ac2bc7",
             "is_media": true,
             "is_active": true,
             "position": {
@@ -2161,10 +2410,10 @@
                 "z": 1.0
               }
             },
-            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpvwhd34o6.png",
+            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmp0s1i203s.png",
             "animation": {
-              "media_path": "Media\\tmpvwhd34o6.png",
-              "id": "22223cc8",
+              "media_path": "Media\\tmp0s1i203s.png",
+              "id": "2c0a6823",
               "name": "Aucune animation",
               "duration": 0.0,
               "transformations": {
@@ -2218,7 +2467,7 @@
           },
           {
             "name": "warning",
-            "id": "37067bb9",
+            "id": "ed2c59c8",
             "is_media": true,
             "is_active": true,
             "position": {
@@ -2244,10 +2493,10 @@
                 "z": 1.0
               }
             },
-            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmpvvxrd6bp.png",
+            "path": "C:\\Users\\EL221079\\Documents\\DOSSIER_SYNCHRO\\PROJETS\\IDEAS LAB\\2024_TMF\\flow_python_api\\temp\\tmprytc05jx.png",
             "animation": {
-              "media_path": "Media\\tmpvvxrd6bp.png",
-              "id": "6bb89bcd",
+              "media_path": "Media\\tmprytc05jx.png",
+              "id": "5fd9fdeb",
               "name": "Aucune animation",
               "duration": 0.0,
               "transformations": {
@@ -2307,7 +2556,7 @@
         }
       },
       "dest_step": {
-        "id": "be457830",
+        "id": "5a9cbfca",
         "is_origin": false,
         "items": [],
         "name": "Eqt2",
@@ -2318,7 +2567,7 @@
       },
       "source_component": {
         "name": "Connection-Bouton-Eqt2",
-        "id": "67c9cea1",
+        "id": "9b1c7030",
         "is_media": false,
         "is_active": true,
         "position": {
@@ -2346,18 +2595,18 @@
         },
         "property_identifier": "Component_button_text_interactive_identifier",
         "nov_component_identifier": "Component_button_text",
-        "to": "be457830"
+        "to": "5a9cbfca"
       },
-      "id": "1212c2ba"
+      "id": "b4b1d079"
     },
     {
       "from_step": {
-        "id": "c827a2f3",
+        "id": "f61f2110",
         "is_origin": false,
         "items": [
           {
             "name": "B_2DAssistance",
-            "id": "4385ff84",
+            "id": "964e1e58",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -2386,7 +2635,7 @@
           },
           {
             "name": "B_3DAssistance",
-            "id": "836fcbec",
+            "id": "58d77da9",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -2415,7 +2664,7 @@
           },
           {
             "name": "B_VideoAssistance",
-            "id": "8b378df9",
+            "id": "17656d13",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -2444,7 +2693,7 @@
           },
           {
             "name": "B_OralReport",
-            "id": "66b7c66e",
+            "id": "5a8e6297",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -2473,7 +2722,7 @@
           },
           {
             "name": "B_Procedure",
-            "id": "24a6d5d6",
+            "id": "f4ffd5cf",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -2502,7 +2751,7 @@
           },
           {
             "name": "B_Assistance1-2D",
-            "id": "d0008293",
+            "id": "1b5097ba",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -2531,7 +2780,7 @@
           },
           {
             "name": "B_Assistance1-Video",
-            "id": "1c653c77",
+            "id": "e1fd95a8",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -2560,7 +2809,7 @@
           },
           {
             "name": "B_Assistance1-RM",
-            "id": "58cee8ab",
+            "id": "1c6df699",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -2595,12 +2844,12 @@
         }
       },
       "dest_step": {
-        "id": "c238d09a",
+        "id": "0c59444d",
         "is_origin": false,
         "items": [
           {
             "name": "B_Assistance1-2D",
-            "id": "3e2bf99b",
+            "id": "d5a1585e",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -2629,7 +2878,7 @@
           },
           {
             "name": "B_Assistance1-Video",
-            "id": "4f38ac3f",
+            "id": "2c19d96a",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -2658,7 +2907,7 @@
           },
           {
             "name": "B_Assistance1-RM",
-            "id": "56eaf032",
+            "id": "561ebb95",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -2694,7 +2943,7 @@
       },
       "source_component": {
         "name": "B_2DAssistance",
-        "id": "4385ff84",
+        "id": "964e1e58",
         "is_media": false,
         "is_active": true,
         "position": {
@@ -2722,18 +2971,18 @@
         },
         "property_identifier": "Component_button_text_interactive_identifier",
         "nov_component_identifier": "Component_button_text",
-        "to": "c238d09a"
+        "to": "0c59444d"
       },
-      "id": "3d30f1ae"
+      "id": "17dcb052"
     },
     {
       "from_step": {
-        "id": "c827a2f3",
+        "id": "f61f2110",
         "is_origin": false,
         "items": [
           {
             "name": "B_2DAssistance",
-            "id": "4385ff84",
+            "id": "964e1e58",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -2762,7 +3011,7 @@
           },
           {
             "name": "B_3DAssistance",
-            "id": "836fcbec",
+            "id": "58d77da9",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -2791,7 +3040,7 @@
           },
           {
             "name": "B_VideoAssistance",
-            "id": "8b378df9",
+            "id": "17656d13",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -2820,7 +3069,7 @@
           },
           {
             "name": "B_OralReport",
-            "id": "66b7c66e",
+            "id": "5a8e6297",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -2849,7 +3098,7 @@
           },
           {
             "name": "B_Procedure",
-            "id": "24a6d5d6",
+            "id": "f4ffd5cf",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -2878,7 +3127,7 @@
           },
           {
             "name": "B_Assistance1-2D",
-            "id": "d0008293",
+            "id": "1b5097ba",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -2907,7 +3156,7 @@
           },
           {
             "name": "B_Assistance1-Video",
-            "id": "1c653c77",
+            "id": "e1fd95a8",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -2936,7 +3185,7 @@
           },
           {
             "name": "B_Assistance1-RM",
-            "id": "58cee8ab",
+            "id": "1c6df699",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -2971,12 +3220,12 @@
         }
       },
       "dest_step": {
-        "id": "4c8a932f",
+        "id": "8b7a7c14",
         "is_origin": false,
         "items": [
           {
             "name": "B_Assistance1-2D",
-            "id": "c10520c7",
+            "id": "7e87f560",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3005,7 +3254,7 @@
           },
           {
             "name": "B_Assistance1-Video",
-            "id": "9df138b9",
+            "id": "143b34da",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3034,7 +3283,7 @@
           },
           {
             "name": "B_Assistance1-RM",
-            "id": "a800f589",
+            "id": "e2fdebb6",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3070,7 +3319,7 @@
       },
       "source_component": {
         "name": "B_3DAssistance",
-        "id": "836fcbec",
+        "id": "58d77da9",
         "is_media": false,
         "is_active": true,
         "position": {
@@ -3098,18 +3347,18 @@
         },
         "property_identifier": "Component_button_text_interactive_identifier",
         "nov_component_identifier": "Component_button_text",
-        "to": "4c8a932f"
+        "to": "8b7a7c14"
       },
-      "id": "528b7880"
+      "id": "0d50f9d0"
     },
     {
       "from_step": {
-        "id": "c827a2f3",
+        "id": "f61f2110",
         "is_origin": false,
         "items": [
           {
             "name": "B_2DAssistance",
-            "id": "4385ff84",
+            "id": "964e1e58",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3138,7 +3387,7 @@
           },
           {
             "name": "B_3DAssistance",
-            "id": "836fcbec",
+            "id": "58d77da9",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3167,7 +3416,7 @@
           },
           {
             "name": "B_VideoAssistance",
-            "id": "8b378df9",
+            "id": "17656d13",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3196,7 +3445,7 @@
           },
           {
             "name": "B_OralReport",
-            "id": "66b7c66e",
+            "id": "5a8e6297",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3225,7 +3474,7 @@
           },
           {
             "name": "B_Procedure",
-            "id": "24a6d5d6",
+            "id": "f4ffd5cf",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3254,7 +3503,7 @@
           },
           {
             "name": "B_Assistance1-2D",
-            "id": "d0008293",
+            "id": "1b5097ba",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3283,7 +3532,7 @@
           },
           {
             "name": "B_Assistance1-Video",
-            "id": "1c653c77",
+            "id": "e1fd95a8",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3312,7 +3561,7 @@
           },
           {
             "name": "B_Assistance1-RM",
-            "id": "58cee8ab",
+            "id": "1c6df699",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3347,7 +3596,7 @@
         }
       },
       "dest_step": {
-        "id": "0b6201d2",
+        "id": "e7903697",
         "is_origin": false,
         "items": [],
         "name": "Eqt1-PlanningInterventions",
@@ -3358,7 +3607,7 @@
       },
       "source_component": {
         "name": "B_VideoAssistance",
-        "id": "8b378df9",
+        "id": "17656d13",
         "is_media": false,
         "is_active": true,
         "position": {
@@ -3386,18 +3635,18 @@
         },
         "property_identifier": "Component_button_text_interactive_identifier",
         "nov_component_identifier": "Component_button_text",
-        "to": "0b6201d2"
+        "to": "e7903697"
       },
-      "id": "1bdfcee8"
+      "id": "517dc51a"
     },
     {
       "from_step": {
-        "id": "c827a2f3",
+        "id": "f61f2110",
         "is_origin": false,
         "items": [
           {
             "name": "B_2DAssistance",
-            "id": "4385ff84",
+            "id": "964e1e58",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3426,7 +3675,7 @@
           },
           {
             "name": "B_3DAssistance",
-            "id": "836fcbec",
+            "id": "58d77da9",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3455,7 +3704,7 @@
           },
           {
             "name": "B_VideoAssistance",
-            "id": "8b378df9",
+            "id": "17656d13",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3484,7 +3733,7 @@
           },
           {
             "name": "B_OralReport",
-            "id": "66b7c66e",
+            "id": "5a8e6297",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3513,7 +3762,7 @@
           },
           {
             "name": "B_Procedure",
-            "id": "24a6d5d6",
+            "id": "f4ffd5cf",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3542,7 +3791,7 @@
           },
           {
             "name": "B_Assistance1-2D",
-            "id": "d0008293",
+            "id": "1b5097ba",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3571,7 +3820,7 @@
           },
           {
             "name": "B_Assistance1-Video",
-            "id": "1c653c77",
+            "id": "e1fd95a8",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3600,7 +3849,7 @@
           },
           {
             "name": "B_Assistance1-RM",
-            "id": "58cee8ab",
+            "id": "1c6df699",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3635,7 +3884,7 @@
         }
       },
       "dest_step": {
-        "id": "6f148af3",
+        "id": "5afe1b68",
         "is_origin": false,
         "items": [],
         "name": "Assistance1-2D",
@@ -3646,7 +3895,7 @@
       },
       "source_component": {
         "name": "B_Assistance1-2D",
-        "id": "d0008293",
+        "id": "1b5097ba",
         "is_media": false,
         "is_active": true,
         "position": {
@@ -3674,18 +3923,18 @@
         },
         "property_identifier": "Component_button_text_interactive_identifier",
         "nov_component_identifier": "Component_button_text",
-        "to": "6f148af3"
+        "to": "5afe1b68"
       },
-      "id": "bdba7623"
+      "id": "0d480508"
     },
     {
       "from_step": {
-        "id": "c827a2f3",
+        "id": "f61f2110",
         "is_origin": false,
         "items": [
           {
             "name": "B_2DAssistance",
-            "id": "4385ff84",
+            "id": "964e1e58",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3714,7 +3963,7 @@
           },
           {
             "name": "B_3DAssistance",
-            "id": "836fcbec",
+            "id": "58d77da9",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3743,7 +3992,7 @@
           },
           {
             "name": "B_VideoAssistance",
-            "id": "8b378df9",
+            "id": "17656d13",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3772,7 +4021,7 @@
           },
           {
             "name": "B_OralReport",
-            "id": "66b7c66e",
+            "id": "5a8e6297",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3801,7 +4050,7 @@
           },
           {
             "name": "B_Procedure",
-            "id": "24a6d5d6",
+            "id": "f4ffd5cf",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3830,7 +4079,7 @@
           },
           {
             "name": "B_Assistance1-2D",
-            "id": "d0008293",
+            "id": "1b5097ba",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3859,7 +4108,7 @@
           },
           {
             "name": "B_Assistance1-Video",
-            "id": "1c653c77",
+            "id": "e1fd95a8",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3888,7 +4137,7 @@
           },
           {
             "name": "B_Assistance1-RM",
-            "id": "58cee8ab",
+            "id": "1c6df699",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -3923,7 +4172,7 @@
         }
       },
       "dest_step": {
-        "id": "e57568c0",
+        "id": "58d3e852",
         "is_origin": false,
         "items": [],
         "name": "Assistance1-Video",
@@ -3934,7 +4183,7 @@
       },
       "source_component": {
         "name": "B_Assistance1-Video",
-        "id": "1c653c77",
+        "id": "e1fd95a8",
         "is_media": false,
         "is_active": true,
         "position": {
@@ -3962,18 +4211,18 @@
         },
         "property_identifier": "Component_button_text_interactive_identifier",
         "nov_component_identifier": "Component_button_text",
-        "to": "e57568c0"
+        "to": "58d3e852"
       },
-      "id": "2c472bb1"
+      "id": "8f52df3e"
     },
     {
       "from_step": {
-        "id": "c827a2f3",
+        "id": "f61f2110",
         "is_origin": false,
         "items": [
           {
             "name": "B_2DAssistance",
-            "id": "4385ff84",
+            "id": "964e1e58",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4002,7 +4251,7 @@
           },
           {
             "name": "B_3DAssistance",
-            "id": "836fcbec",
+            "id": "58d77da9",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4031,7 +4280,7 @@
           },
           {
             "name": "B_VideoAssistance",
-            "id": "8b378df9",
+            "id": "17656d13",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4060,7 +4309,7 @@
           },
           {
             "name": "B_OralReport",
-            "id": "66b7c66e",
+            "id": "5a8e6297",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4089,7 +4338,7 @@
           },
           {
             "name": "B_Procedure",
-            "id": "24a6d5d6",
+            "id": "f4ffd5cf",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4118,7 +4367,7 @@
           },
           {
             "name": "B_Assistance1-2D",
-            "id": "d0008293",
+            "id": "1b5097ba",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4147,7 +4396,7 @@
           },
           {
             "name": "B_Assistance1-Video",
-            "id": "1c653c77",
+            "id": "e1fd95a8",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4176,7 +4425,7 @@
           },
           {
             "name": "B_Assistance1-RM",
-            "id": "58cee8ab",
+            "id": "1c6df699",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4211,7 +4460,7 @@
         }
       },
       "dest_step": {
-        "id": "8a568bf9",
+        "id": "8bf13223",
         "is_origin": false,
         "items": [],
         "name": "Assistance1-RM",
@@ -4222,7 +4471,7 @@
       },
       "source_component": {
         "name": "B_Assistance1-RM",
-        "id": "58cee8ab",
+        "id": "1c6df699",
         "is_media": false,
         "is_active": true,
         "position": {
@@ -4250,18 +4499,18 @@
         },
         "property_identifier": "Component_button_text_interactive_identifier",
         "nov_component_identifier": "Component_button_text",
-        "to": "8a568bf9"
+        "to": "8bf13223"
       },
-      "id": "a7cc9537"
+      "id": "beefef0b"
     },
     {
       "from_step": {
-        "id": "c238d09a",
+        "id": "0c59444d",
         "is_origin": false,
         "items": [
           {
             "name": "B_Assistance1-2D",
-            "id": "3e2bf99b",
+            "id": "d5a1585e",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4290,7 +4539,7 @@
           },
           {
             "name": "B_Assistance1-Video",
-            "id": "4f38ac3f",
+            "id": "2c19d96a",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4319,7 +4568,7 @@
           },
           {
             "name": "B_Assistance1-RM",
-            "id": "56eaf032",
+            "id": "561ebb95",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4354,7 +4603,7 @@
         }
       },
       "dest_step": {
-        "id": "6f148af3",
+        "id": "5afe1b68",
         "is_origin": false,
         "items": [],
         "name": "Assistance1-2D",
@@ -4365,7 +4614,7 @@
       },
       "source_component": {
         "name": "B_Assistance1-2D",
-        "id": "3e2bf99b",
+        "id": "d5a1585e",
         "is_media": false,
         "is_active": true,
         "position": {
@@ -4393,18 +4642,18 @@
         },
         "property_identifier": "Component_button_text_interactive_identifier",
         "nov_component_identifier": "Component_button_text",
-        "to": "6f148af3"
+        "to": "5afe1b68"
       },
-      "id": "e92b893c"
+      "id": "86804704"
     },
     {
       "from_step": {
-        "id": "c238d09a",
+        "id": "0c59444d",
         "is_origin": false,
         "items": [
           {
             "name": "B_Assistance1-2D",
-            "id": "3e2bf99b",
+            "id": "d5a1585e",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4433,7 +4682,7 @@
           },
           {
             "name": "B_Assistance1-Video",
-            "id": "4f38ac3f",
+            "id": "2c19d96a",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4462,7 +4711,7 @@
           },
           {
             "name": "B_Assistance1-RM",
-            "id": "56eaf032",
+            "id": "561ebb95",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4497,7 +4746,7 @@
         }
       },
       "dest_step": {
-        "id": "e57568c0",
+        "id": "58d3e852",
         "is_origin": false,
         "items": [],
         "name": "Assistance1-Video",
@@ -4508,7 +4757,7 @@
       },
       "source_component": {
         "name": "B_Assistance1-Video",
-        "id": "4f38ac3f",
+        "id": "2c19d96a",
         "is_media": false,
         "is_active": true,
         "position": {
@@ -4536,18 +4785,18 @@
         },
         "property_identifier": "Component_button_text_interactive_identifier",
         "nov_component_identifier": "Component_button_text",
-        "to": "e57568c0"
+        "to": "58d3e852"
       },
-      "id": "7bcee5c5"
+      "id": "531c8499"
     },
     {
       "from_step": {
-        "id": "c238d09a",
+        "id": "0c59444d",
         "is_origin": false,
         "items": [
           {
             "name": "B_Assistance1-2D",
-            "id": "3e2bf99b",
+            "id": "d5a1585e",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4576,7 +4825,7 @@
           },
           {
             "name": "B_Assistance1-Video",
-            "id": "4f38ac3f",
+            "id": "2c19d96a",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4605,7 +4854,7 @@
           },
           {
             "name": "B_Assistance1-RM",
-            "id": "56eaf032",
+            "id": "561ebb95",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4640,7 +4889,7 @@
         }
       },
       "dest_step": {
-        "id": "8a568bf9",
+        "id": "8bf13223",
         "is_origin": false,
         "items": [],
         "name": "Assistance1-RM",
@@ -4651,7 +4900,7 @@
       },
       "source_component": {
         "name": "B_Assistance1-RM",
-        "id": "56eaf032",
+        "id": "561ebb95",
         "is_media": false,
         "is_active": true,
         "position": {
@@ -4679,18 +4928,18 @@
         },
         "property_identifier": "Component_button_text_interactive_identifier",
         "nov_component_identifier": "Component_button_text",
-        "to": "8a568bf9"
+        "to": "8bf13223"
       },
-      "id": "3512dc22"
+      "id": "437ba215"
     },
     {
       "from_step": {
-        "id": "4c8a932f",
+        "id": "8b7a7c14",
         "is_origin": false,
         "items": [
           {
             "name": "B_Assistance1-2D",
-            "id": "c10520c7",
+            "id": "7e87f560",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4719,7 +4968,7 @@
           },
           {
             "name": "B_Assistance1-Video",
-            "id": "9df138b9",
+            "id": "143b34da",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4748,7 +4997,7 @@
           },
           {
             "name": "B_Assistance1-RM",
-            "id": "a800f589",
+            "id": "e2fdebb6",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4783,7 +5032,7 @@
         }
       },
       "dest_step": {
-        "id": "6f148af3",
+        "id": "5afe1b68",
         "is_origin": false,
         "items": [],
         "name": "Assistance1-2D",
@@ -4794,7 +5043,7 @@
       },
       "source_component": {
         "name": "B_Assistance1-2D",
-        "id": "c10520c7",
+        "id": "7e87f560",
         "is_media": false,
         "is_active": true,
         "position": {
@@ -4822,18 +5071,18 @@
         },
         "property_identifier": "Component_button_text_interactive_identifier",
         "nov_component_identifier": "Component_button_text",
-        "to": "6f148af3"
+        "to": "5afe1b68"
       },
-      "id": "e605b8bf"
+      "id": "44c2afd4"
     },
     {
       "from_step": {
-        "id": "4c8a932f",
+        "id": "8b7a7c14",
         "is_origin": false,
         "items": [
           {
             "name": "B_Assistance1-2D",
-            "id": "c10520c7",
+            "id": "7e87f560",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4862,7 +5111,7 @@
           },
           {
             "name": "B_Assistance1-Video",
-            "id": "9df138b9",
+            "id": "143b34da",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4891,7 +5140,7 @@
           },
           {
             "name": "B_Assistance1-RM",
-            "id": "a800f589",
+            "id": "e2fdebb6",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -4926,7 +5175,7 @@
         }
       },
       "dest_step": {
-        "id": "e57568c0",
+        "id": "58d3e852",
         "is_origin": false,
         "items": [],
         "name": "Assistance1-Video",
@@ -4937,7 +5186,7 @@
       },
       "source_component": {
         "name": "B_Assistance1-Video",
-        "id": "9df138b9",
+        "id": "143b34da",
         "is_media": false,
         "is_active": true,
         "position": {
@@ -4965,18 +5214,18 @@
         },
         "property_identifier": "Component_button_text_interactive_identifier",
         "nov_component_identifier": "Component_button_text",
-        "to": "e57568c0"
+        "to": "58d3e852"
       },
-      "id": "f032b694"
+      "id": "9ae534cc"
     },
     {
       "from_step": {
-        "id": "4c8a932f",
+        "id": "8b7a7c14",
         "is_origin": false,
         "items": [
           {
             "name": "B_Assistance1-2D",
-            "id": "c10520c7",
+            "id": "7e87f560",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -5005,7 +5254,7 @@
           },
           {
             "name": "B_Assistance1-Video",
-            "id": "9df138b9",
+            "id": "143b34da",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -5034,7 +5283,7 @@
           },
           {
             "name": "B_Assistance1-RM",
-            "id": "a800f589",
+            "id": "e2fdebb6",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -5069,7 +5318,7 @@
         }
       },
       "dest_step": {
-        "id": "8a568bf9",
+        "id": "8bf13223",
         "is_origin": false,
         "items": [],
         "name": "Assistance1-RM",
@@ -5080,7 +5329,7 @@
       },
       "source_component": {
         "name": "B_Assistance1-RM",
-        "id": "a800f589",
+        "id": "e2fdebb6",
         "is_media": false,
         "is_active": true,
         "position": {
@@ -5108,18 +5357,18 @@
         },
         "property_identifier": "Component_button_text_interactive_identifier",
         "nov_component_identifier": "Component_button_text",
-        "to": "8a568bf9"
+        "to": "8bf13223"
       },
-      "id": "aed65337"
+      "id": "78720d5b"
     },
     {
       "from_step": {
-        "id": "4ddc13fd",
+        "id": "ccb3a38b",
         "is_origin": false,
         "items": [
           {
             "name": "B_Assistance1-2D",
-            "id": "ef86161a",
+            "id": "ac5d8e3e",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -5148,7 +5397,7 @@
           },
           {
             "name": "B_Assistance1-Video",
-            "id": "96262712",
+            "id": "20bb9e46",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -5177,7 +5426,7 @@
           },
           {
             "name": "B_Assistance1-RM",
-            "id": "417f4714",
+            "id": "64d32531",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -5212,7 +5461,7 @@
         }
       },
       "dest_step": {
-        "id": "6f148af3",
+        "id": "5afe1b68",
         "is_origin": false,
         "items": [],
         "name": "Assistance1-2D",
@@ -5223,7 +5472,7 @@
       },
       "source_component": {
         "name": "B_Assistance1-2D",
-        "id": "ef86161a",
+        "id": "ac5d8e3e",
         "is_media": false,
         "is_active": true,
         "position": {
@@ -5251,18 +5500,18 @@
         },
         "property_identifier": "Component_button_text_interactive_identifier",
         "nov_component_identifier": "Component_button_text",
-        "to": "6f148af3"
+        "to": "5afe1b68"
       },
-      "id": "206be432"
+      "id": "4c191f3f"
     },
     {
       "from_step": {
-        "id": "4ddc13fd",
+        "id": "ccb3a38b",
         "is_origin": false,
         "items": [
           {
             "name": "B_Assistance1-2D",
-            "id": "ef86161a",
+            "id": "ac5d8e3e",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -5291,7 +5540,7 @@
           },
           {
             "name": "B_Assistance1-Video",
-            "id": "96262712",
+            "id": "20bb9e46",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -5320,7 +5569,7 @@
           },
           {
             "name": "B_Assistance1-RM",
-            "id": "417f4714",
+            "id": "64d32531",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -5355,7 +5604,7 @@
         }
       },
       "dest_step": {
-        "id": "e57568c0",
+        "id": "58d3e852",
         "is_origin": false,
         "items": [],
         "name": "Assistance1-Video",
@@ -5366,7 +5615,7 @@
       },
       "source_component": {
         "name": "B_Assistance1-Video",
-        "id": "96262712",
+        "id": "20bb9e46",
         "is_media": false,
         "is_active": true,
         "position": {
@@ -5394,18 +5643,18 @@
         },
         "property_identifier": "Component_button_text_interactive_identifier",
         "nov_component_identifier": "Component_button_text",
-        "to": "e57568c0"
+        "to": "58d3e852"
       },
-      "id": "c9ff3cef"
+      "id": "bdf6ce86"
     },
     {
       "from_step": {
-        "id": "4ddc13fd",
+        "id": "ccb3a38b",
         "is_origin": false,
         "items": [
           {
             "name": "B_Assistance1-2D",
-            "id": "ef86161a",
+            "id": "ac5d8e3e",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -5434,7 +5683,7 @@
           },
           {
             "name": "B_Assistance1-Video",
-            "id": "96262712",
+            "id": "20bb9e46",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -5463,7 +5712,7 @@
           },
           {
             "name": "B_Assistance1-RM",
-            "id": "417f4714",
+            "id": "64d32531",
             "is_media": false,
             "is_active": true,
             "position": {
@@ -5498,7 +5747,7 @@
         }
       },
       "dest_step": {
-        "id": "8a568bf9",
+        "id": "8bf13223",
         "is_origin": false,
         "items": [],
         "name": "Assistance1-RM",
@@ -5509,7 +5758,7 @@
       },
       "source_component": {
         "name": "B_Assistance1-RM",
-        "id": "417f4714",
+        "id": "64d32531",
         "is_media": false,
         "is_active": true,
         "position": {
@@ -5537,15 +5786,15 @@
         },
         "property_identifier": "Component_button_text_interactive_identifier",
         "nov_component_identifier": "Component_button_text",
-        "to": "8a568bf9"
+        "to": "8bf13223"
       },
-      "id": "bd103975"
+      "id": "40b6b7e9"
     }
   ],
   "animations": [
     {
-      "media_path": "Media\\tmpwircavs0.png",
-      "id": "d5926011",
+      "media_path": "Media\\blip.mp3",
+      "id": "906f6988",
       "name": "Aucune animation",
       "duration": 0.0,
       "transformations": {
@@ -5596,8 +5845,8 @@
       }
     },
     {
-      "media_path": "Media\\tmp77z578ln.png",
-      "id": "f3325dcb",
+      "media_path": "Media\\tmpcw_tcnrb.png",
+      "id": "faef6461",
       "name": "Aucune animation",
       "duration": 0.0,
       "transformations": {
@@ -5648,8 +5897,8 @@
       }
     },
     {
-      "media_path": "Media\\tmpvwhd34o6.png",
-      "id": "22223cc8",
+      "media_path": "Media\\tmpsunhkqqh.png",
+      "id": "806340dc",
       "name": "Aucune animation",
       "duration": 0.0,
       "transformations": {
@@ -5700,8 +5949,8 @@
       }
     },
     {
-      "media_path": "Media\\tmpvvxrd6bp.png",
-      "id": "6bb89bcd",
+      "media_path": "Media\\tmp0s1i203s.png",
+      "id": "2c0a6823",
       "name": "Aucune animation",
       "duration": 0.0,
       "transformations": {
@@ -5752,8 +6001,8 @@
       }
     },
     {
-      "media_path": "Media\\tmpx1xrtxl0.png",
-      "id": "ba6a12f0",
+      "media_path": "Media\\tmprytc05jx.png",
+      "id": "5fd9fdeb",
       "name": "Aucune animation",
       "duration": 0.0,
       "transformations": {
@@ -5804,8 +6053,60 @@
       }
     },
     {
-      "media_path": "Media\\tmpakcox7pz.png",
-      "id": "604559a6",
+      "media_path": "Media\\tmprizbb_jf.png",
+      "id": "1b1a8125",
+      "name": "Aucune animation",
+      "duration": 0.0,
+      "transformations": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0,
+          "eulerAngles": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "transformations_destination": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0,
+          "eulerAngles": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "media_path": "Media\\tmpqqgl53rz.png",
+      "id": "5690aa2b",
       "name": "Aucune animation",
       "duration": 0.0,
       "transformations": {
@@ -5856,5 +6157,5 @@
       }
     }
   ],
-  "last_date_save": "2024-05-23T16:02:54.371437+01:00"
+  "last_date_save": "2024-06-24T14:39:29.194469+01:00"
 }

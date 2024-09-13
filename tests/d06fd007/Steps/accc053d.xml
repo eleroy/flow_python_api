@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Step xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<StepIdentifier>
-		<Id>accc053d</Id>
-	</StepIdentifier>
-	<DisplayName>Assistance2-2D</DisplayName>
-	<ComponentMetadataIdentifiers/>
-	<MediaMetadataIdentifiers/>
-</Step>

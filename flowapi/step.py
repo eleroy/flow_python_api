@@ -95,7 +95,6 @@ class Step(BaseModel):
                 **component_dict.copy(),
             }
         }
-        print(dict_step)
         return dict_step, dict_metadata
 
     def add(self, item, clone=False, item_name_prefix="", item_name_suffix=""):
@@ -126,7 +125,6 @@ class Step(BaseModel):
         return self.add(Media.get_placeholder(name))
 
     def save_step(self, scenario_path):
-        print(scenario_path)
         step_path = Path(scenario_path).joinpath("Steps")
         step_path.mkdir(exist_ok=True)
         dict_step, dict_metadata = self.get_xml()

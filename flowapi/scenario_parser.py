@@ -13,7 +13,6 @@ def parseScenario(scenario_path: Path):
     config_file = scenario_path.joinpath("config.xml")
     with open(config_file, "r", encoding="utf-8") as f:
         config_data = xmltodict.parse(f.read())
-    print(config_data)
     uuids = []
     uuids.extend([])
     animation_file = scenario_path.joinpath("animations.xml")
@@ -24,7 +23,6 @@ def parseScenario(scenario_path: Path):
     component_file = scenario_path.joinpath("component_metadatas.xml")
     with open(component_file, "r", encoding="utf-8") as f:
         component_data = xmltodict.parse(f.read())
-    print(component_data)
 
     link_file = scenario_path.joinpath("links.xml")
     with open(link_file, "r", encoding="utf-8") as f:

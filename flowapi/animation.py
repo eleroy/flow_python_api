@@ -38,7 +38,6 @@ class Animation(BaseModel):
     def parse(animation_dict:FlowAnimationDictType):
         tf = []
         for trans in animation_dict["Transformations"]["ValueTupleOfStringHFTransform"]:
-            print(trans)
             try:
                 tf.append(ValueTupleOfStringHFTransform.model_validate(trans))
             except:

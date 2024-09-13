@@ -173,9 +173,7 @@ class Scenario(BaseModel):
             for item in step.items:
                 if not item.is_media:
                     items.append(item)
-                    print(type(item))                     
                     if isinstance(item, BoutonImage):
-                        print("copying icon")
                         icon_dir.mkdir(exist_ok=True, parents=True)
                         shutil.copyfile(
                             Path(item.path), icon_dir.joinpath(item.get_target_image_name())

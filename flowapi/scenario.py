@@ -9,7 +9,7 @@ from typing import List
 from pydantic import BaseModel, Field
 import xmltodict
 
-from .media import Media, parseMedia, AudioMedia
+from .media import Media, VideoMedia, parseMedia, AudioMedia
 
 from .step import Step
 from .items import Component, parseComponent, BoutonImage
@@ -79,8 +79,8 @@ class Scenario(BaseModel):
         anim_ids = []
         for step in self.steps:
             for item in step.items:
-                if isinstance(item, Media) or isinstance(item, AudioMedia):
-                    if(item.animation.id not in anim_ids):
+                if isinstance(item, (AudioMedia, Media, VideoMedia)):
+                    if item.animation.id not in anim_ids:
                         self.animations.append(item.animation)
                         anim_ids.append(item.animation.id)
 
@@ -176,7 +176,8 @@ class Scenario(BaseModel):
                     if isinstance(item, BoutonImage):
                         icon_dir.mkdir(exist_ok=True, parents=True)
                         shutil.copyfile(
-                            Path(item.path), icon_dir.joinpath(item.get_target_image_name())
+                            Path(item.path),
+                            icon_dir.joinpath(item.get_target_image_name()),
                         )
 
         component_dict = {
@@ -194,10 +195,11 @@ class Scenario(BaseModel):
         items = []
         for step in self.steps:
             for item in step.items:
-                if type(item) in [Media, AudioMedia]:
+                if type(item) in [Media, AudioMedia, VideoMedia]:
                     if not item.internal_media:
                         shutil.copyfile(
-                            Path(item.path), media_dir.joinpath(item.id+Path(item.path).suffix)
+                            Path(item.path),
+                            media_dir.joinpath(item.id + Path(item.path).suffix),
                         )
                     items.append(item)
         metadata_xml = [item.get_xml() for item in items]
@@ -245,7 +247,9 @@ class Scenario(BaseModel):
         with open(component_file, "w", encoding="utf-8") as fp:
             fp.write(
                 xmltodict.unparse(
-                    self.get_components_xml(output_folder), pretty=True, short_empty_elements=True
+                    self.get_components_xml(output_folder),
+                    pretty=True,
+                    short_empty_elements=True,
                 )
             )
 
@@ -308,7 +312,7 @@ class Scenario(BaseModel):
 
     def find_steps_from_regex(self, name_regex: re.Pattern | str):
         if type(name_regex) is str:
-            if not name_regex.endswith("$"): #Adds $ to match end of string
+            if not name_regex.endswith("$"):  # Adds $ to match end of string
                 name_regex += "$"
             regex = re.compile(name_regex)
         elif type(name_regex) is re.Pattern:
@@ -337,7 +341,7 @@ class Scenario(BaseModel):
             step_regex = ".*" if step_regex == "*" else step_regex
             matched_steps = self.find_steps_from_regex(step_regex)
         item_regex = ".*" if item_regex == "*" else item_regex
-        
+
         if not matched_steps:
             return []
         matched_items = []
@@ -439,7 +443,9 @@ class Scenario(BaseModel):
                         ]["Id"]
                     ]
             for component in comp_id:
-                new_component = parseComponent(component_data, links_data, component, scenario_path)
+                new_component = parseComponent(
+                    component_data, links_data, component, scenario_path
+                )
                 if new_component is not None:
                     uuids.append(new_component.id)
                     step_obj.add(new_component)

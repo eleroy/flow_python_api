@@ -91,6 +91,14 @@ def clear_uuid_database():
     uuid_list = set()
 
 
+def look_in_table(table, child_key, value):
+    for item in table:
+        if child_key in item:
+            if item[child_key] == value:
+                return item
+    return False
+
+
 if __name__ == "__main__":
     pos = FullPosition()
     print(pos)
